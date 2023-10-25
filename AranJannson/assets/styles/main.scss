@@ -1,0 +1,72 @@
+$defaultFontStack: "DM Sans",-apple-system,blinkmacsystemfont,"Segoe UI",roboto,oxygen-sans,ubuntu,cantarell,"Helvetica Neue",helvetica,arial,sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+html, body, input, * {
+  font-family: $defaultFontStack;
+}
+
+.text-bold { font-weight: bold; }
+
+.vspace {
+  display: block;
+  height: 20px;
+
+  &.sm {
+    height: 10px;
+  }
+
+  &.lg {
+    height: 40px;
+  }
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.content {
+  padding: 40px 60px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: calc(1200px - 120px);
+
+  h2 {
+    color: #374151;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    color: #4B5563;
+    margin: 10px 0;
+  }
+
+  a {
+    color: #374151;
+    font-weight: bold;
+  }
+}
+
+main {
+  margin: 40px auto;
+}
+
+.center-mount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Transitions */
+.page-enter-active, .page-leave-active {
+  transition: opacity .1s ease-out;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease-out;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
