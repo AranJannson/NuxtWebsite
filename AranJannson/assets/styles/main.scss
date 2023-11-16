@@ -76,7 +76,9 @@ main {
 
 //
 body {
-  background-image: linear-gradient(to bottom, rgb(2, 31, 75) , rgb(7, 97, 166), rgb(26, 125, 212));
+  //Old background gradient
+  //background-image: linear-gradient(to bottom, rgb(2, 31, 75) , rgb(7, 97, 166), rgb(26, 125, 212));
+  background: linear-gradient(to bottom right, #1E90FF, #127c4e);
   width:100%;
   min-height: 100%;
 };
@@ -301,9 +303,19 @@ ul.social-network li {
   padding: 5px; display: inline-block;
 }
 .welcomeBox{
-  padding: 20px;
-  //border-radius: 20px;
   width: 100%;
+  margin: 100px;
+  
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    margin: 0px;
+    padding: 50px;
+  }
+
+  p{
+    overflow-wrap: break-word;
+
+  }
 
 
 }
@@ -312,4 +324,26 @@ h2{
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.navBarList{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  li{
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+
+    a{
+      text-decoration: none; /* Remove underlines from links */
+      color: white; /* Set a specific color for the links */
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #4bc5fa;
+      }
+    }
+  }
 }

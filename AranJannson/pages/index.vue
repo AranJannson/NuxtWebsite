@@ -7,7 +7,18 @@
     <p style="color:gainsboro;">This is my portfolio website where you can see my most popular GitHub projects along with how to reach me and furthermore details regarding myself.</p>
   </div>
 
+  <div>
+    <h2 style="text-align: center">My Projects</h2>
+    <ProjectCarousel />
+  </div>
+
 </template>
 <script>
+import ProjectCarousel from '~/components/ProjectCarousel.vue';
 
+export default {
+  components: {
+    ProjectCarousel,
+  },
+};
 </script>
