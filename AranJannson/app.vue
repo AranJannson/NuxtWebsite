@@ -1,6 +1,14 @@
 <template>
-  <div>
-    <Header/>
-    <Footer/>
-  </div>
+
+  <Header/>
+  <Footer/>
+
+
 </template>
+
+
+<script setup lang="ts">
+definePageMeta({
+  layout: false,
+})
+</script>
