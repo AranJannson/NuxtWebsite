@@ -59,7 +59,7 @@
           <div class="row">
             <div class="col-md-12 copy">
               <p style="text-align: center;">Icons From <a style="text-decoration: underline; color: #3B5998;" target="_blank" href="https://material.io/resources/icons/?style=round">Google</a> and <a style="text-decoration: underline; color: #3B5998;" target="_blank" href="https://icons8.com/">Icons8</a></p>
-              <p class="text-center">  Copyright © 2023 Aran Jannson - All Rights Reserved. </p>
+              <p class="text-center">  Copyright  &copy; {{currentYear}} Aran Jannson - All Rights Reserved. </p>
             </div>
           </div>
         </div>
@@ -68,6 +68,16 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent, ref, computed } from 'vue';
 
+export default defineComponent({
+  setup() {
+    const currentYear = ref(new Date().getFullYear());
+
+    return {
+      currentYear: computed(() => currentYear.value),
+    };
+  },
+});
 </script>
