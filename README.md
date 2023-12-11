@@ -31,8 +31,10 @@ cd NuxtWebiste
 yarn install
 ```
 
-Usage
-Development
+# Usage
+
+## Development
+
 Start the development server.
 
 ```bash
@@ -41,7 +43,7 @@ yarn dev
 
 Your project will run at http://localhost:3000.
 
-# Production Build
+## Production Build
 
 Generate a production build.
 
@@ -49,7 +51,7 @@ Generate a production build.
 yarn generate
 ```
 
-# Start Production Server
+## Start Production Server
 
 Start the production server.
 
