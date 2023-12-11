@@ -78,17 +78,12 @@ main {
 body {
   //Old background gradient
   //background-image: linear-gradient(to bottom, rgb(2, 31, 75) , rgb(7, 97, 166), rgb(26, 125, 212));
-  background: linear-gradient(to bottom right, #1E90FF, #127c4e);
+  //background: linear-gradient(to bottom right, #1E90FF, #127c4e);
+  background: linear-gradient(45deg, #800000, #FF6347, #8B0000);
   width:100%;
   min-height: 100%;
 };
 
-//h2 {
-//  padding: 25px 0;
-//  text-align: center;
-//  color: #fff;
-//  background: #7c8490;
-//}
 footer {
   background: #2d2d2d;
   color: white;
@@ -100,7 +95,7 @@ footer a {
   transition-duration: 0.2s;
 }
 footer a:hover {
-  color: #4bc5fa;
+  color: #a10000;
   text-decoration: none;
 }
 .copy {
@@ -137,10 +132,10 @@ ul.social-network li {
   color: #fff;
 }
 .social-network a.socialIcon:hover {
-  color: #44BCDD;
+  color: #dd4456;
 }
 .socialHoverClass {
-  color: #44BCDD;
+  color: #b90b0b;
 }
 .social-circle li a {
   display: inline-block;
@@ -303,13 +298,14 @@ ul.social-network li {
   padding: 5px; display: inline-block;
 }
 .welcomeBox{
-  width: 100%;
+  width: calc(100% - 100px);
   margin: 100px;
   
   @media screen and (max-width: 800px) {
-    width: 100%;
-    margin: 0px;
+
+    margin: 0;
     padding: 50px;
+
   }
 
   p{
@@ -326,24 +322,75 @@ h2{
   font-weight: bold;
 }
 
-.navBarList{
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  li{
-    display: inline-block;
-    margin-right: 10px;
-    color: white;
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 300px; // Adjust the height as needed
+}
 
-    a{
-      text-decoration: none; /* Remove underlines from links */
-      color: white; /* Set a specific color for the links */
-      transition: color 0.3s ease;
+li {
+  display: inline-block;
+  margin-right: 10px;
 
-      &:hover {
-        color: #4bc5fa;
-      }
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+
+    &:hover {
+      cursor: pointer !important;
+      color: #910a41 !important;
     }
   }
 }
+
+.slanted {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slanted::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform-origin: top left;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 50%; // Vertically center content
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  padding: 50px 0 30px; // Adjust top and bottom padding here
+}
+
+h1,
+p {
+  padding: 0;
+  margin: 0; // Remove default margins for h1 and p
+}
+
+// Media query for mobile screens
+@media (max-width: 768px) {
+  .header {
+    height: 250px; // Adjust the height for mobile
+  }
+
+  .content {
+    top: 50%; // Center vertically on mobile
+    transform: translate(-50%, -50%);
+    padding: 10px 0; // Adjust top and bottom padding for mobile
+  }
+}
+
