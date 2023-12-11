@@ -44,14 +44,6 @@
                 </ul>
               </div>
             </div>
-            <!-- <div class="col-md-3">
-                <h4> Follow Me </h4>
-                <ul class="social-network social-circle">
-                 <li> <a href="#" class="icoFacebook" title="Facebook"> <i class="fa fa-facebook"> </i> </a> </li>
-                 <li> <a href="https://www.linkedin.com/in/aranjannson/" class="icoLinkedin" title="Linkedin"> <i class="fa fa-linkedin"> </i> </a> </li>
-        <li> <a href="#"> <i class="fa fa-youtube" aria-hidden="true"> </i> </a> </li>
-                </ul>
-        </div>   -->
             <div class="col-md-3">
               <h4 style="color: cornsilk;">Powered by TwentyDimension</h4>
             </div>

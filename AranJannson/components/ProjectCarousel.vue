@@ -8,7 +8,7 @@
         @touchend="handleTouchEnd"
     >
       <div v-for="(project, index) in projects" :key="index" class="slide">
-        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.5);">
+        <div class="project-details">
           <h3><a :href="project.link" class="projectTitle">{{ project.name }}</a></h3>
           <p>{{ project.description }}</p>
           <a :href="project.link">
@@ -116,7 +116,7 @@ export default {
 
 .project-details {
   text-align: center;
-  background-color: #5ac2d9;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 15px;
 }

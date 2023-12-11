@@ -95,7 +95,7 @@ footer a {
   transition-duration: 0.2s;
 }
 footer a:hover {
-  color: #a10000;
+  color: #a14800;
   text-decoration: none;
 }
 .copy {
@@ -339,7 +339,7 @@ li {
 
     &:hover {
       cursor: pointer !important;
-      color: #910a41 !important;
+      color: #c53805 !important;
     }
   }
 }
@@ -364,7 +364,7 @@ li {
   z-index: -1;
 }
 
-.content {
+.header-content {
   position: absolute;
   top: 50%; // Vertically center content
   left: 50%;

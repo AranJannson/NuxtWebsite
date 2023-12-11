@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="slanted"></div>
-    <div class="content">
+    <div class="header-content">
       <h1 style="text-align: center; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top: 20px;">
 
                <a style="color: white;  text-decoration: none;" href="/">Aran Jannson</a>
