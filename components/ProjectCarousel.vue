@@ -9,13 +9,19 @@
     >
       <div v-for="(project, index) in projects" :key="index" class="slide">
         <div class="project-details">
-          <h3><a :href="project.link" class="projectTitle">{{ project.name }}</a></h3>
-          <p>{{ project.description }}</p>
-          <a :href="project.link">
-            <img :src="project.imageUrl" alt="Project Image" class="project-image"/>
-          </a>
-          <p style="font-weight: bold;">Language:</p>
-          <p :class="getLanguageClass(project.language)">{{ project.language }}</p>
+          <div>
+            <h3><a :href="project.link" class="projectTitle">{{ project.name }}</a></h3>
+            <p>{{ project.description }}</p>
+          </div>
+          <div>
+            <a :href="project.link">
+              <img :src="project.imageUrl" alt="Project Image" class="project-image"/>
+            </a>
+          </div>
+          <div>
+            <p style="font-weight: bold;">Language:</p>
+            <p :class="getLanguageClass(project.language)">{{ project.language }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -33,7 +39,7 @@ export default {
       currentIndex: 0,
       projects: [
         {
-          name: 'Java-For-Beginners',
+          name: 'Java For Beginners',
           description: 'A list of tasks in Java to learn the core concepts',
           imageUrl: 'https://aranjannson.com/Pictures/javaForBeginners.png',
           language: 'Java',
@@ -41,18 +47,19 @@ export default {
         },
         {
           name: 'Surrey CompSoc Webapp',
-          description: 'As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new website for the society.',
+          description: 'As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new web application for the society.',
           imageUrl: 'https://aranjannson.com/Pictures/compsoc_logo_color_transparent.png',
           language: 'Nuxt2',
           link: 'https://github.com/surreycompsoc/website',
         },
         {
-          name: 'PortfolioWebsite',
+          name: 'Portfolio Website',
           description: 'The github repository for this website',
           imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
           language: 'Nuxt3',
           link: 'https://github.com/AranJannson/PortfolioWebsite'
         }
+        // Add more projects with their details and image URLs
       ],
       touchStartX: 0,
       touchEndX: 0,
@@ -96,6 +103,15 @@ export default {
       }
     },
   },
+  watch: {
+    currentIndex(newValue, oldValue) {
+      if (newValue === this.projects.length) {
+        this.currentIndex = 0;
+      } else if (newValue === -1) {
+        this.currentIndex = this.projects.length - 1;
+      }
+    },
+  },
 };
 </script>
 
@@ -129,7 +145,8 @@ export default {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 15px;
-  width: 300px;
+  width: 400px;
+  aspect-ratio: 2/3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -137,7 +154,7 @@ export default {
 
 .project-image {
   max-width: 100%;
-  width: 250px;
+  width: 450px;
   height: auto;
   border-radius: 5px;
   align-self: center;

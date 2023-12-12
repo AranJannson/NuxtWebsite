@@ -300,7 +300,7 @@ ul.social-network li {
 .welcomeBox{
   width: calc(100% - 100px);
   margin: 100px;
-  
+
   @media screen and (max-width: 800px) {
 
     margin: 0;
@@ -373,7 +373,7 @@ li {
   color: white;
   text-align: center;
   z-index: 1;
-  padding: 10px 0 30px; // Adjust top and bottom padding here
+  padding: 10px 0 60px; // Adjust top and bottom padding here
 }
 
 h1,
@@ -428,7 +428,7 @@ p {
 }
 
 .gradient-text {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #b7b7b7, #ffffff, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(255, 186, 0, 0), #e77d14, #ff0000, rgba(0, 0, 0, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-position 0.5s ease-in-out;
