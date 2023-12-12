@@ -19,9 +19,9 @@ Clone the repository.
 Navigate to the project directory.
 
 ```bash
-git clone https://github.com/AranJannson/NuxtWebsite.git
+git clone https://github.com/AranJannson/PortfolioWebsite.git
 
-cd NuxtWebiste
+cd PortfolioWebsite
 ```
 
 
