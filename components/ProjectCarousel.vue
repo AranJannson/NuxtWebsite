@@ -53,7 +53,6 @@ export default {
           language: 'Nuxt3',
           link: 'https://github.com/AranJannson/PortfolioWebsite'
         }
-        // Add more projects with their details and image URLs
       ],
       touchStartX: 0,
       touchEndX: 0,
@@ -90,9 +89,9 @@ export default {
       const difference = this.touchStartX - this.touchEndX;
       if (Math.abs(difference) > 50) {
         if (difference > 0) {
-          this.nextSlide(); // Swiped left, go to next slide
+          this.nextSlide();
         } else {
-          this.prevSlide(); // Swiped right, go to previous slide
+          this.prevSlide();
         }
       }
     },
@@ -130,7 +129,7 @@ export default {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 15px;
-  width: 300px; /* Fixed width */
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -138,16 +137,16 @@ export default {
 
 .project-image {
   max-width: 100%;
-  width: 250px; /* Adjust the image width as per your layout */
+  width: 250px;
   height: auto;
   border-radius: 5px;
-  align-self: center; /* Center image within its container */
+  align-self: center;
 }
 
 .controls {
   margin-top: 10px;
   text-align: center;
-  flex-shrink: 0; /* Prevent controls from affecting container size */
+  flex-shrink: 0;
 }
 
 button {
