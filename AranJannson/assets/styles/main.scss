@@ -362,6 +362,7 @@ li {
   transform-origin: top left;
   transform: skewY(-5deg);
   z-index: -1;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
@@ -372,7 +373,7 @@ li {
   color: white;
   text-align: center;
   z-index: 1;
-  padding: 50px 0 30px; // Adjust top and bottom padding here
+  padding: 10px 0 30px; // Adjust top and bottom padding here
 }
 
 h1,
@@ -384,13 +385,44 @@ p {
 // Media query for mobile screens
 @media (max-width: 768px) {
   .header {
-    height: 250px; // Adjust the height for mobile
+    height: 250px;
   }
 
-  .content {
+  .header-content {
     top: 50%; // Center vertically on mobile
     transform: translate(-50%, -50%);
     padding: 10px 0; // Adjust top and bottom padding for mobile
   }
 }
 
+.linkedInOverlay {
+  box-shadow: 2px 2px 5px;
+  background-color: #0077B5;
+  padding: 10px;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  object-fit: contain;
+  object-position: bottom;
+
+  position: fixed;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+
+  z-index: 999999;
+
+  img {
+    pointer-events: none !important;
+    display: inline-block;
+    filter: unquote("invert()");
+    width: 40px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3579s;
+  }
+}

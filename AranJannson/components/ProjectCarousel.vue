@@ -40,12 +40,19 @@ export default {
           link: 'https://github.com/AranJannson/Java-For-Beginners',
         },
         {
-          name: 'Project 2',
-          description: 'Description of project 2',
-          imageUrl: 'https://via.placeholder.com/300x200',
-          language: 'Python',
-          link: '',
+          name: 'Surrey CompSoc Webapp',
+          description: 'As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new website for the society.',
+          imageUrl: 'https://aranjannson.com/Pictures/compsoc_logo_color_transparent.png',
+          language: 'Nuxt2',
+          link: 'https://github.com/surreycompsoc/website',
         },
+        {
+          name: 'PortfolioWebsite',
+          description: 'The github repository for this website',
+          imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
+          language: 'Nuxt3',
+          link: 'https://github.com/AranJannson/PortfolioWebsite'
+        }
         // Add more projects with their details and image URLs
       ],
       touchStartX: 0,
@@ -66,6 +73,10 @@ export default {
         return 'csharp-text';
       } else if (language === 'Python') {
         return 'python-text';
+      } else if (language === 'Nuxt2'){
+        return 'nuxt2-text'
+      } else if (language === 'Nuxt3'){
+        return 'nuxt3-text'
       }
       return 'default-text';
     },
@@ -119,18 +130,24 @@ export default {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 15px;
+  width: 300px; /* Fixed width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-image {
   max-width: 100%;
-  width: 300px;
+  width: 250px; /* Adjust the image width as per your layout */
   height: auto;
   border-radius: 5px;
+  align-self: center; /* Center image within its container */
 }
 
 .controls {
   margin-top: 10px;
   text-align: center;
+  flex-shrink: 0; /* Prevent controls from affecting container size */
 }
 
 button {
@@ -143,7 +160,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #b3001b;
 }
 
 button:disabled {
@@ -177,6 +194,18 @@ button:disabled {
 
 .python-text {
   color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nuxt2-text {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nuxt3-text {
+  color: #82d203;
   font-size: 20px;
   font-weight: bold;
 }

@@ -1,5 +1,11 @@
 <template>
 
+  <a href="https://www.linkedin.com/in/aranjannson/" target="_blank">
+    <div class="linkedInOverlay">
+      <img src="https://img.icons8.com/ios-filled/1000/000000/linkedin.png"  alt=""/>
+    </div>
+  </a>
+
   <Header/>
   <Footer/>
 
