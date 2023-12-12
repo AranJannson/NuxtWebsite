@@ -426,3 +426,47 @@ p {
     transition: 0.3579s;
   }
 }
+
+.gradient-text {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ff0000, #FF5733, rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s ease-in-out;
+  background-size: 800% auto;
+  animation: gradientAnimation 20s linear infinite;
+
+  &:hover {
+    background-position: right center;
+    -webkit-text-fill-color: initial;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  12.5% {
+    background-position: 100% 0;
+  }
+  25% {
+    background-position: 0 0;
+  }
+  37.5% {
+    background-position: -100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  62.5% {
+    background-position: 100% 0;
+  }
+  75% {
+    background-position: 0 0;
+  }
+  87.5% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
