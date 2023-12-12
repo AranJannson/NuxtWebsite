@@ -339,7 +339,7 @@ li {
 
     &:hover {
       cursor: pointer !important;
-      color: #c53805 !important;
+      color: #c53805;
     }
   }
 }
@@ -428,7 +428,7 @@ p {
 }
 
 .gradient-text {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ff0000, #FF5733, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #b7b7b7, #ffffff, rgba(0, 0, 0, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-position 0.5s ease-in-out;
@@ -438,6 +438,7 @@ p {
   &:hover {
     background-position: right center;
     -webkit-text-fill-color: initial;
+    color: white;
   }
 }
 
