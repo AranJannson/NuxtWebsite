@@ -7,6 +7,9 @@
   </a>
 
   <Header/>
+  <transition name="fade" mode="out-in">
+  <NuxtPage/>
+  </transition>
   <Footer/>
 
 

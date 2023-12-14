@@ -1,53 +1,40 @@
 <template>
-  <div>
-    <NuxtPage />
-
+  <div class="site-container">
+    <div class="main-content">
+    </div>
     <footer class="mainfooter" role="contentinfo">
-      <div class="footer-middle">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <div class="footer-pad">
-                <h4>Pages</h4>
-                <ul class="list-unstyled">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/socials">Socials</a></li>
-                  <li><a href="/projects">Projects</a></li>
-                  <li><a href="/contact">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="footer-pad">
-                <h4>Important Information</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#">Privacy Policy</a></li>
-                  <!-- Add more links or content here -->
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="footer-pad">
-                <h4>External Links</h4>
-                <ul class="list-unstyled">
-                  <!-- Add external links here -->
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <h4 style="color: cornsilk;">Powered by TwentyDimension</h4>
-            </div>
-          </div>
-          <hr style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <p>
-                Icons from <a href="https://material.io/resources/icons/?style=round" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #3B5998;">Google</a> and <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #3B5998;">Icons8</a>
-              </p>
-              <p>&copy; {{ currentYear }} Aran Jannson - All Rights Reserved.</p>
-            </div>
-          </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pages</h3>
+          <ul>
+            <li class="gradient-text"><a href="/">Home</a></li>
+            <li class="gradient-text"><a href="/socials">Socials</a></li>
+            <li class="gradient-text"><a href="/projects">Projects</a></li>
+            <li class="gradient-text"><a href="/contact">Contact</a></li>
+          </ul>
         </div>
+        <div class="footer-section">
+          <h3>Important Information</h3>
+          <ul>
+            <li class="gradient-text"><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>External Links</h3>
+          <ul>
+            <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Powered by</h3>
+          <ul>
+            <li><a href="" target="_blank" rel="noopener noreferrer" >TwentyDimension</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>Icons from <a href="https://material.io/resources/icons/?style=round" target="_blank" rel="noopener noreferrer" style="color: #a7acb1">Google</a> and <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer" style="color: #a7acb1">Icons8</a></p>
+        <p>Copyright &copy; {{ currentYear }} Aran Jannson - All Rights Reserved.</p>
       </div>
     </footer>
   </div>
@@ -68,15 +55,66 @@ export default defineComponent({
 </script>
 
 <style scoped>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 .mainfooter {
-  margin-top: 30px;
+  flex-shrink: 0;
+  //background-color: #333;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
-.footer-middle {
-  padding-bottom: 20px;
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.text-sm {
-  font-size: 12px;
+.footer-section {
+  flex: 1 1 250px;
+  margin: 0 20px;
+  max-width: 300px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
 }
 </style>
