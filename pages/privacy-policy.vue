@@ -4,7 +4,7 @@
 
 <template>
   <div class="privacy-policy">
-    <h1>Privacy Policy</h1>
+    <h2>Privacy Policy</h2>
 
     <p>Thank you for visiting Aran Jannson's portfolio site. This website contains links to external sites for informational purposes only. We do not collect any personal information from visitors.</p>
 

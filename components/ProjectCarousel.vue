@@ -150,6 +150,11 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease;
+
+  &:hover{
+    transform: translateY(-5px);
+  }
 }
 
 .project-image {

@@ -8,7 +8,7 @@
   </div>
 
   <div>
-    <h2 style="text-align: center">My Projects</h2>
+    <h2 style="text-align: center">My Most Popular Projects</h2>
     <ProjectCarousel />
   </div>
 

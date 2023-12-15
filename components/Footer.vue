@@ -22,18 +22,25 @@
         <div class="footer-section">
           <h3>External Links</h3>
           <ul>
-            <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+            <li><NuxtLink class="gradient-text" href="https://files.aranjannson.com" target="_blank" rel="noopener noreferrer">files.aranjannson</NuxtLink></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Icons From</h3>
+          <ul>
+            <li><NuxtLink class="gradient-text" href="https://material.io/resources/icons/?style=round" target="_blank" rel="noopener noreferrer" >Google</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" href="https://icons8.com/" target="_blank" rel="noopener noreferrer" >Icon8</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>Powered by</h3>
           <ul>
-            <li><a class="gradient-text" href="" target="_blank" rel="noopener noreferrer" >TwentyDimension</a></li>
+            <li><NuxtLink class="gradient-text" href="" target="_blank" rel="noopener noreferrer" >TwentyDimension</NuxtLink></li>
           </ul>
         </div>
       </div>
       <div class="footer-info">
-        <p>Icons from <a href="https://material.io/resources/icons/?style=round" target="_blank" rel="noopener noreferrer" style="color: #a7acb1">Google</a> and <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer" style="color: #a7acb1">Icons8</a></p>
+<!--        <p>Icons from <a href="https://material.io/resources/icons/?style=round" target="_blank" rel="noopener noreferrer" style="color: #a7acb1">Google</a> and <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer" style="color: #a7acb1">Icons8</a></p>-->
         <p>Copyright &copy; {{ currentYear }} Aran Jannson - All Rights Reserved.</p>
       </div>
     </footer>
@@ -58,6 +65,7 @@ export default defineComponent({
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+
 }
 
 .site-container {
@@ -81,6 +89,7 @@ body {
   padding-top: 20px;
   padding-bottom: 10px;
   width: 100%;
+  bottom:0;
 }
 
 .footer-content {
