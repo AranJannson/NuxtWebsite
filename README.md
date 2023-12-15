@@ -13,6 +13,8 @@ Yarn (minimum version 4.0.0)
 
 Nuxt 3.0 (installed via Yarn)
 
+TailWind CSS (minimum version 3.3.6)
+
 
 # Installation
 Clone the repository.

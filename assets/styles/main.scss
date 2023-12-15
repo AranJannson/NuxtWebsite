@@ -1,4 +1,8 @@
 @import "bootstrap/scss/bootstrap";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 
 $defaultFontStack: "DM Sans",-apple-system,blinkmacsystemfont,"Segoe UI",roboto,oxygen-sans,ubuntu,cantarell,"Helvetica Neue",helvetica,arial,sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 html, body, input, * {
@@ -62,8 +66,9 @@ main {
 .page-enter-active, .page-leave-active {
   transition: opacity .1s ease-out;
 }
-.page-enter, .page-leave-to {
+.page-enter, .page-leave-active {
   opacity: 0;
+  transform: scale(0);
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -80,6 +85,8 @@ body {
   //background-image: linear-gradient(to bottom, rgb(2, 31, 75) , rgb(7, 97, 166), rgb(26, 125, 212));
   //background: linear-gradient(to bottom right, #1E90FF, #127c4e);
   background: linear-gradient(45deg, #800000, #FF6347, #8B0000);
+  //background: linear-gradient(45deg, #6ad3d6, #a0e0e3, #7bc7cc);
+
   width:100%;
   min-height: 100%;
 };

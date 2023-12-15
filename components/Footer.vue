@@ -7,16 +7,16 @@
         <div class="footer-section">
           <h3>Pages</h3>
           <ul>
-            <li class="gradient-text"><a href="/">Home</a></li>
-            <li class="gradient-text"><a href="/socials">Socials</a></li>
-            <li class="gradient-text"><a href="/projects">Projects</a></li>
-            <li class="gradient-text"><a href="/contact">Contact</a></li>
+            <li><NuxtLink class="gradient-text" to="/">Home</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" to="/socials">Socials</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" to="/projects">Projects</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" to="/contact">Contact</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>Important Information</h3>
           <ul>
-            <li class="gradient-text"><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><NuxtLink class="gradient-text" to="/privacy-policy">Privacy Policy</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -28,7 +28,7 @@
         <div class="footer-section">
           <h3>Powered by</h3>
           <ul>
-            <li><a href="" target="_blank" rel="noopener noreferrer" >TwentyDimension</a></li>
+            <li><a class="gradient-text" href="" target="_blank" rel="noopener noreferrer" >TwentyDimension</a></li>
           </ul>
         </div>
       </div>
