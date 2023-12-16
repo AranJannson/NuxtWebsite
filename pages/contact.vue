@@ -1,4 +1,7 @@
 <template>
+
+  <title>Contact | AranJannson</title>
+
   <div class="contact">
 
     <h2>Contact Me</h2>

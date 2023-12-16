@@ -1,4 +1,7 @@
 <template>
+
+  <title>Socials | AranJannson</title>
+
   <div class="headerTitle" style="display: flex; justify-content: space-between;">
     <div style="width: 50%;">
       <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 80px;">Find Me On</h1>

@@ -1,4 +1,7 @@
 <template>
+
+  <title>Projects | AranJannson</title>
+
   <div class="project-container">
     <div
         v-for="(project, index) in projects"

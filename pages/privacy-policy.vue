@@ -3,6 +3,9 @@
 </script>
 
 <template>
+
+  <title>Privacy Policy | AranJannson</title>
+
   <div class="privacy-policy">
     <h2>Privacy Policy</h2>
 
