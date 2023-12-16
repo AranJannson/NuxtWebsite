@@ -143,8 +143,8 @@ export default {
 .project-details {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  border-radius: 15px;
+  padding: 1.2rem;
+  border-radius: 8px;
   width: 400px;
   aspect-ratio: 2/3;
   display: flex;
