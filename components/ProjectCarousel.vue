@@ -181,7 +181,7 @@ button {
 }
 
 button:hover {
-  background-color: #b3001b;
+  background-color: #0054b3;
 }
 
 button:disabled {

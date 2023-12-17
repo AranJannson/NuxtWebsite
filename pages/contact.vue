@@ -2,20 +2,18 @@
 
   <title>Contact | AranJannson</title>
 
-  <div class="contact">
-
-    <h2>Contact Me</h2>
-    <div>
-      <h3>Email:</h3>
-      <br>
-      <a href="mailto:me@aranjannson.com ">me@aranjannson.com</a>
-    </div>
-  </div>
+  <ContactForm />
 
 </template>
 
-<script setup lang="ts">
-// Component logic
+<script>
+import ContactForm from '~/components/ContactForm.vue';
+
+export default {
+  components: {
+    ContactForm
+  }
+};
 </script>
 
 <style>

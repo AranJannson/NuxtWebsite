@@ -9,13 +9,15 @@
         class="project-card"
     >
       <div class="image-container">
-        <img :src="project.imageUrl" :alt="project.name" class="project-image">
+        <NuxtLink :to="project.link">
+          <img :src="project.imageUrl" :alt="project.name" class="project-image" />
+        </NuxtLink>
       </div>
       <div class="project-details">
         <h2 class="project-name">{{ project.name }}</h2>
         <p class="project-description">{{ project.description }}</p>
         <p>Language: {{ project.language }}</p>
-        <a class="gradient-text" :href="project.link" target="_blank" rel="noopener noreferrer">GitHub Link</a>
+        <NuxtLink class="gradient-text" :href="project.link" target="_blank" rel="noopener noreferrer">GitHub Link</NuxtLink>
       </div>
     </div>
   </div>

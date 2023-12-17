@@ -1,16 +1,21 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
   postcss: {
     plugins: {
+      'postcss-nesting': {},
       tailwindcss: {},
       autoprefixer: {},
-      'postcss-nesting': {},
+      // Add other PostCSS plugins if needed
     },
+  },
+
+  head: {
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ]
   },
 
   css: ['~/assets/styles/main.scss'],
 
-})
+});
