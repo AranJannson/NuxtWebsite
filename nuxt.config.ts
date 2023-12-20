@@ -1,5 +1,6 @@
-export default defineNuxtConfig({
+export default {
   devtools: { enabled: true },
+
 
   postcss: {
     plugins: {
@@ -17,5 +18,4 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/styles/main.scss'],
-
-});
+};

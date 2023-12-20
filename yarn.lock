@@ -920,6 +920,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@intlify/core-base@npm:9.4.1":
+  version: 9.4.1
+  resolution: "@intlify/core-base@npm:9.4.1"
+  dependencies:
+    "@intlify/message-compiler": "npm:9.4.1"
+    "@intlify/shared": "npm:9.4.1"
+  checksum: bcf5caa6ac444a39e30af69d7b14e0cab3b530c2d546abd7d321b6af19f09c503b375f91f42656070992807aac6a74c6a1c9d337fde36f64f00949d704a0826f
+  languageName: node
+  linkType: hard
+
+"@intlify/message-compiler@npm:9.4.1":
+  version: 9.4.1
+  resolution: "@intlify/message-compiler@npm:9.4.1"
+  dependencies:
+    "@intlify/shared": "npm:9.4.1"
+    source-map-js: "npm:^1.0.2"
+  checksum: 63e4d8ad920fec2c5385e86ada124a58b63b9068eca5b907a2294f42b49c518c628c337ed12159cf3035dd95f1b5deeae9b59ebadbbd8687472649edce8c6cf8
+  languageName: node
+  linkType: hard
+
+"@intlify/shared@npm:9.4.1":
+  version: 9.4.1
+  resolution: "@intlify/shared@npm:9.4.1"
+  checksum: 5f042da31f1b0429de061d5c8b40a3cf69f36ce7796f4ba552b97ad25ad9ba511dc0ea8c3311e88396d8f78d478d8353b2754d44df0fdf3772fe179a2746758a
+  languageName: node
+  linkType: hard
+
 "@ioredis/commands@npm:^1.1.1":
   version: 1.2.0
   resolution: "@ioredis/commands@npm:1.2.0"
@@ -7914,6 +7941,7 @@ __metadata:
     tailwindcss: "npm:^3.3.6"
     vue: "npm:^3.3.7"
     vue-carousel: "npm:^0.18.0"
+    vue-i18n: "npm:9.4.1"
     vue-router: "npm:^4.2.5"
   languageName: unknown
   linkType: soft
@@ -11259,6 +11287,19 @@ __metadata:
   version: 0.1.0
   resolution: "vue-devtools-stub@npm:0.1.0"
   checksum: 527af4b887eb82b000e5f56d555618d0ef5494a10d0f701899e4e8b98773a6e4af33d282c47283fb2e8f7f640d05bced7c94b31968abf4a949bc3d92075c7ce0
+  languageName: node
+  linkType: hard
+
+"vue-i18n@npm:9.4.1":
+  version: 9.4.1
+  resolution: "vue-i18n@npm:9.4.1"
+  dependencies:
+    "@intlify/core-base": "npm:9.4.1"
+    "@intlify/shared": "npm:9.4.1"
+    "@vue/devtools-api": "npm:^6.5.0"
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: e618e71e98e8e4710a3ec9107ffef8bb3ec663b6c04b670f738b836f9dcf648080a8559d1c7481ad3271b9b98cea28bc84cbfc2499de0835b74dd2cd531648dd
   languageName: node
   linkType: hard
 

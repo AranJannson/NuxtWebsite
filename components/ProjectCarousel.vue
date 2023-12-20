@@ -2,116 +2,111 @@
   <div class="carousel">
     <div
         class="slides"
-        :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
+        :style="{ transform: `translateX(-${currentIndex * 100}%)`, transition: transitionEnabled ? 'transform 0.3s' : 'none' }"
         @touchstart="handleTouchStart"
         @touchmove="handleTouchMove"
         @touchend="handleTouchEnd"
     >
       <div v-for="(project, index) in projects" :key="index" class="slide">
         <div class="project-details">
+          <h3><a :href="project.link" class="projectTitle">{{ project.name }}</a></h3>
+          <p>{{ project.description }}</p>
+          <a :href="project.link">
+            <img :src="project.imageUrl" alt="Project Image">
+          </a>
           <div>
-            <h3><a :href="project.link" class="projectTitle">{{ project.name }}</a></h3>
-            <p>{{ project.description }}</p>
-          </div>
-          <div>
-            <a :href="project.link">
-              <img :src="project.imageUrl" alt="Project Image" class="project-image"/>
-            </a>
-          </div>
-          <div>
-            <p style="font-weight: bold;">Language:</p>
-            <p :class="getLanguageClass(project.language)">{{ project.language }}</p>
+            <p>Language: </p>
+            <p :class="`${project.language.toLowerCase()}-text`">{{ project.language }}</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="controls">
-      <button @click="prevSlide" :disabled="currentIndex === 0" class="btn btn-dark">Previous</button>
-      <button @click="nextSlide" :disabled="currentIndex === projects.length - 1" class="btn btn-dark">Next</button>
+    <div class="align-content-center">
+      <button class="btn btn-dark" @click="prevSlide">Previous</button>
+      <button class="btn btn-dark" @click="nextSlide">Next</button>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      currentIndex: 0,
-      projects: [
-        {
-          name: 'Java For Beginners',
-          description: 'A list of tasks in Java to learn the core concepts',
-          imageUrl: 'https://aranjannson.com/Pictures/javaForBeginners.png',
-          language: 'Java',
-          link: 'https://github.com/AranJannson/Java-For-Beginners',
-        },
-        {
-          name: 'Surrey CompSoc Webapp',
-          description: 'As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new web application for the society.',
-          imageUrl: 'https://aranjannson.com/Pictures/compsoc_logo_color_transparent.png',
-          language: 'Nuxt2',
-          link: 'https://github.com/surreycompsoc/website',
-        },
-        {
-          name: 'Portfolio Website',
-          description: 'The github repository for this website',
-          imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
-          language: 'Nuxt3',
-          link: 'https://github.com/AranJannson/PortfolioWebsite'
-        }
-        // Add more projects with their details and image URLs
-      ],
-      touchStartX: 0,
-      touchEndX: 0,
-    };
+<script setup>
+import { ref, reactive } from 'vue';
+
+const originalProjects = [
+  {
+    name: 'Java For Beginners',
+    description: 'A list of tasks in Java to learn the core concepts',
+    imageUrl: 'https://aranjannson.com/Pictures/javaForBeginners.png',
+    language: 'Java',
+    link: 'https://github.com/AranJannson/Java-For-Beginners',
   },
-  methods: {
-    nextSlide() {
-      this.currentIndex = (this.currentIndex + 1) % this.projects.length;
-    },
-    prevSlide() {
-      this.currentIndex = (this.currentIndex - 1 + this.projects.length) % this.projects.length;
-    },
-    getLanguageClass(language) {
-      if (language === 'Java') {
-        return 'java-text';
-      } else if (language === 'C#') {
-        return 'csharp-text';
-      } else if (language === 'Python') {
-        return 'python-text';
-      } else if (language === 'Nuxt2'){
-        return 'nuxt2-text'
-      } else if (language === 'Nuxt3'){
-        return 'nuxt3-text'
-      }
-      return 'default-text';
-    },
-    handleTouchStart(event) {
-      this.touchStartX = event.touches[0].clientX;
-    },
-    handleTouchMove(event) {
-      this.touchEndX = event.touches[0].clientX;
-    },
-    handleTouchEnd() {
-      const difference = this.touchStartX - this.touchEndX;
-      if (Math.abs(difference) > 50) {
-        if (difference > 0) {
-          this.nextSlide();
-        } else {
-          this.prevSlide();
-        }
-      }
-    },
+  {
+    name: 'Surrey CompSoc Webapp',
+    description: 'As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new web application for the society.',
+    imageUrl: 'https://aranjannson.com/Pictures/compsoc_logo_color_transparent.png',
+    language: 'Nuxt2',
+    link: 'https://github.com/surreycompsoc/website',
   },
-  watch: {
-    currentIndex(newValue, oldValue) {
-      if (newValue === this.projects.length) {
-        this.currentIndex = 0;
-      } else if (newValue === -1) {
-        this.currentIndex = this.projects.length - 1;
-      }
-    },
-  },
+  {
+    name: 'Portfolio Website',
+    description: 'The github repository for this website',
+    imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
+    language: 'Nuxt3',
+    link: 'https://github.com/AranJannson/PortfolioWebsite'
+  }
+];
+
+const projects = reactive([
+  originalProjects[originalProjects.length - 1], // Fake last slide
+  ...originalProjects,
+  originalProjects[0] // Fake first slide
+]);
+
+const currentIndex = ref(1); // Start at the first real slide
+const transitionEnabled = ref(true);
+const transitionDuration = 300; // Transition duration in milliseconds
+
+const nextSlide = () => {
+  transitionEnabled.value = true;
+  currentIndex.value++;
+
+  if (currentIndex.value >= projects.length - 1) {
+    setTimeout(() => {
+      transitionEnabled.value = false;
+      currentIndex.value = 1; // Reset to first real slide
+    }, transitionDuration);
+  }
+};
+
+const prevSlide = () => {
+  transitionEnabled.value = true;
+  currentIndex.value--;
+
+  if (currentIndex.value <= 0) {
+    setTimeout(() => {
+      transitionEnabled.value = false;
+      currentIndex.value = projects.length - 2; // Reset to last real slide
+    }, transitionDuration);
+  }
+};
+
+const touchStartX = ref(0);
+const touchEndX = ref(0);
+
+const handleTouchStart = (e) => {
+  touchStartX.value = e.touches[0].clientX;
+};
+
+const handleTouchMove = (e) => {
+  touchEndX.value = e.touches[0].clientX;
+};
+
+const handleTouchEnd = () => {
+  const threshold = 50; // Minimum distance (in pixels) to trigger a slide change
+  if (touchStartX.value - touchEndX.value > threshold) {
+    nextSlide();
+  } else if (touchStartX.value - touchEndX.value < -threshold) {
+    prevSlide();
+  }
 };
 </script>
 
@@ -157,19 +152,6 @@ export default {
   }
 }
 
-.project-image {
-  max-width: 100%;
-  width: 450px;
-  height: auto;
-  border-radius: 5px;
-  align-self: center;
-}
-
-.controls {
-  margin-top: 10px;
-  text-align: center;
-  flex-shrink: 0;
-}
 
 button {
   margin: 0 5px;
@@ -187,6 +169,13 @@ button:hover {
 button:disabled {
   background-color: #565454;
   cursor: not-allowed;
+}
+
+.align-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem; /* Adjust as needed */
 }
 
 .projectTitle {
