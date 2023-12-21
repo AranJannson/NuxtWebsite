@@ -57,9 +57,10 @@ export default {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #2c2c54;
+
 }
 
 .form-group {
@@ -68,6 +69,7 @@ export default {
 
 label {
   font-weight: bold;
+  color:white;
 }
 
 input,
@@ -87,16 +89,19 @@ textarea {
 }
 
 .submit-button {
-  padding: 10px 20px;
-  background-color: #2f2f2f;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  background-color: #44475a;
+  color: #f8f8f2;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: default;
   transition: background-color 0.3s ease;
+  margin-bottom: auto;
+
+  &:hover {
+    background-color: #6272a4;
+  }
 }
 
-.submit-button:hover {
-  background-color: #0054b3;
-}
 </style>

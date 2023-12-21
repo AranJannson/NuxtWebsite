@@ -181,7 +181,7 @@ button:disabled {
 
 .projectTitle {
   text-decoration: none;
-  color: #bd93f9;
+  color: white;
   transition: color 0.3s ease;
 }
 

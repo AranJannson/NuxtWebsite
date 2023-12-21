@@ -70,7 +70,8 @@ export default {
   margin: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #2c2c54;
+  color: #f8f8f2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   &:hover{

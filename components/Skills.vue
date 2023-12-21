@@ -63,7 +63,7 @@
 }
 
 .skills-title {
-  color: #bd93f9;
+  color: white;
   margin-bottom: 1rem;
 }
 
