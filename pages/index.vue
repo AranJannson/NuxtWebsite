@@ -8,17 +8,39 @@
     <p style="color:gainsboro;">Welcome to my portfolio website! Here, you can explore my most popular GitHub projects, find ways to reach me, and discover more details about myself.</p>
   </div>
 
+
+
+
+  <Skills />
+
+  <div>
+    <br>
+    <br>
+  </div>
+
   <div>
     <h2 style="text-align: center">My Most Popular Projects</h2>
     <ProjectCarousel />
   </div>
 
+  <div>
+    <br>
+    <br>
+  </div>
+
+  <SocialsIcons/>
+
+
 </template>
 <script>
 import ProjectCarousel from '~/components/ProjectCarousel.vue';
+import SocialsIcons from "~/components/SocialsIcons.vue";
+import Skills from "~/components/Skills.vue";
 
 export default {
   components: {
+    Skills,
+    SocialsIcons,
     ProjectCarousel,
   },
 };

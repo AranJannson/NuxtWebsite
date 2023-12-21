@@ -254,8 +254,10 @@ footer a:hover {
 
   @media screen and (max-width: 800px) {
 
-    margin: 0;
-    padding: 50px;
+    width: auto;
+    margin: 1rem auto;
+    padding: 3rem;
+    box-sizing: border-box;
 
   }
 

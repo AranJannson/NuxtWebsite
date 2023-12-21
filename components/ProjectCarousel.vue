@@ -9,7 +9,7 @@
     >
       <div v-for="(project, index) in projects" :key="index" class="slide">
         <div class="project-details">
-          <h3><a :href="project.link" class="projectTitle">{{ project.name }}</a></h3>
+          <h2><a :href="project.link" class="projectTitle">{{ project.name }}</a></h2>
           <p>{{ project.description }}</p>
           <a :href="project.link">
             <img :src="project.imageUrl" alt="Project Image">
@@ -22,8 +22,8 @@
       </div>
     </div>
     <div class="align-content-center">
-      <button class="btn btn-dark" @click="prevSlide">Previous</button>
-      <button class="btn btn-dark" @click="nextSlide">Next</button>
+      <button style="margin: 0.5rem" class="btn btn-dark" @click="prevSlide">Previous</button>
+      <button style="margin: 0.5rem" class="btn btn-dark" @click="nextSlide">Next</button>
     </div>
   </div>
 </template>
@@ -137,7 +137,8 @@ const handleTouchEnd = () => {
 
 .project-details {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #2c2c54;
+  color: white;
   padding: 1.2rem;
   border-radius: 8px;
   width: 400px;
@@ -154,16 +155,16 @@ const handleTouchEnd = () => {
 
 
 button {
-  margin: 0 5px;
-  padding: 8px 16px;
+  background-color: #44475a;
+  color: #f8f8f2;
   border: none;
-  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0054b3;
+  background-color: #6272a4;
 }
 
 button:disabled {
@@ -180,7 +181,7 @@ button:disabled {
 
 .projectTitle {
   text-decoration: none;
-  color: white;
+  color: #bd93f9;
   transition: color 0.3s ease;
 }
 
