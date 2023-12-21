@@ -16,7 +16,7 @@
   <div>
     <br>
     <br>
-  </div>yarn
+  </div>
 
   <div>
     <h2 style="text-align: center">My Most Popular Projects</h2>
