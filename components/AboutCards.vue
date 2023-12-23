@@ -23,7 +23,7 @@
     </div>
     <div class="about-card">
       <h2>
-        Most Popular Projects
+        My Most Popular Projects
       </h2>
       <ProjectCarousel />
     </div>
@@ -62,7 +62,7 @@
   @media screen and (max-width: 800px) {
     width: 98%;
     margin: 1rem auto;
-    padding: 3rem;
+    padding: 2rem 0.5rem;
     box-sizing: border-box;
   }
 

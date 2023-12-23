@@ -152,7 +152,7 @@ onUnmounted(() => {
   max-width: 100%;
   margin: 0 auto;
   place-items: center;
-  padding: 20px;
+  padding: 0.5rem;
   box-sizing: border-box;
   flex: 0 0 auto;
   display: flex;
