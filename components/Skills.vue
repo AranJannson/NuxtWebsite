@@ -17,7 +17,6 @@
       <!-- Frameworks and Libraries -->
       <span class="skill-tag">Bootstrap</span>
       <span class="skill-tag">Django</span>
-      <span class="skill-tag">Material UI</span>
       <span class="skill-tag">Nuxt 2.0</span>
       <span class="skill-tag">Nuxt 3.0</span>
       <span class="skill-tag">TailwindCSS</span>

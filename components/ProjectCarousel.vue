@@ -22,6 +22,9 @@
       </div>
     </div>
     <div class="align-content-center">
+      <div class="slide-number">{{ displayIndex }} / {{ maxIndex }}</div>
+    </div>
+    <div class="align-content-center">
       <button style="margin: 0.5rem" class="btn btn-dark" @click="prevSlide">Previous</button>
       <button style="margin: 0.5rem" class="btn btn-dark" @click="nextSlide">Next</button>
     </div>
@@ -29,7 +32,7 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue';
+import { ref, reactive, onMounted, onUnmounted } from 'vue';
 
 const originalProjects = [
   {
@@ -55,15 +58,27 @@ const originalProjects = [
   }
 ];
 
+const displayIndex = computed(() => {
+  // Adjust the index to account for the dummy slides
+  if (currentIndex.value === 0) {
+    return originalProjects.length;
+  } else if (currentIndex.value === projects.length - 1) {
+    return 1;
+  } else {
+    return currentIndex.value;
+  }
+});
+
 const projects = reactive([
   originalProjects[originalProjects.length - 1], // Fake last slide
   ...originalProjects,
   originalProjects[0] // Fake first slide
 ]);
 
-const currentIndex = ref(1); // Start at the first real slide
+const currentIndex = ref(1);
+const maxIndex = computed(() => originalProjects.length);
 const transitionEnabled = ref(true);
-const transitionDuration = 300; // Transition duration in milliseconds
+const autoScrollInterval = ref(null);
 
 const nextSlide = () => {
   transitionEnabled.value = true;
@@ -72,8 +87,8 @@ const nextSlide = () => {
   if (currentIndex.value >= projects.length - 1) {
     setTimeout(() => {
       transitionEnabled.value = false;
-      currentIndex.value = 1; // Reset to first real slide
-    }, transitionDuration);
+      currentIndex.value = 1;
+    }, 300);
   }
 };
 
@@ -84,8 +99,8 @@ const prevSlide = () => {
   if (currentIndex.value <= 0) {
     setTimeout(() => {
       transitionEnabled.value = false;
-      currentIndex.value = projects.length - 2; // Reset to last real slide
-    }, transitionDuration);
+      currentIndex.value = projects.length - 2;
+    }, 300);
   }
 };
 
@@ -93,6 +108,7 @@ const touchStartX = ref(0);
 const touchEndX = ref(0);
 
 const handleTouchStart = (e) => {
+  clearInterval(autoScrollInterval.value);
   touchStartX.value = e.touches[0].clientX;
 };
 
@@ -101,13 +117,22 @@ const handleTouchMove = (e) => {
 };
 
 const handleTouchEnd = () => {
-  const threshold = 50; // Minimum distance (in pixels) to trigger a slide change
+  autoScrollInterval.value = setInterval(nextSlide, 7000); // Each 1000 = 1 second
+  const threshold = 50;
   if (touchStartX.value - touchEndX.value > threshold) {
     nextSlide();
   } else if (touchStartX.value - touchEndX.value < -threshold) {
     prevSlide();
   }
 };
+
+onMounted(() => {
+  autoScrollInterval.value = setInterval(nextSlide, 7000); // Each 1000 = 1 second
+});
+
+onUnmounted(() => {
+  clearInterval(autoScrollInterval.value);
+});
 </script>
 
 <style scoped>
@@ -136,20 +161,20 @@ const handleTouchEnd = () => {
 }
 
 .project-details {
-  text-align: center;
-  background-color: #2c2c54;
-  color: white;
-  padding: 1.2rem;
-  border-radius: 8px;
-  width: 400px;
-  aspect-ratio: 2/3;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #1e1e3d;
+  border-radius: 10px;
+  text-align: center;
 
-  &:hover{
-    transform: translateY(-5px);
+  img{
+    border-radius: 10px;
   }
 }
 
@@ -176,7 +201,7 @@ button:disabled {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem; /* Adjust as needed */
+  margin-top: 1rem;
 }
 
 .projectTitle {
