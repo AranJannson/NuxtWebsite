@@ -2,6 +2,8 @@
 
   <title>Contact | AranJannson</title>
 
+  <br>
+
   <ContactForm />
 
 </template>

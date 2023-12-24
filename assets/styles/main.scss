@@ -9,6 +9,10 @@ html, body, input, * {
   font-family: $defaultFontStack;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body{
   display: flex;
   flex: 1;

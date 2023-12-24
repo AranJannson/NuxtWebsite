@@ -2,7 +2,7 @@
 
   <title>Projects | AranJannson</title>
 
-  <div class="project-container">
+  <div class="project-container" data-aos="fade-left" data-aos-delay="300">
     <div
         v-for="(project, index) in projects"
         :key="index"
@@ -60,6 +60,18 @@ definePageMeta({
   description: 'Aran Jannson\'s Portfolio Website Projects Page',
   image: '~/public/favicon.png',
 })
+</script>
+
+<script setup>
+
+import { onMounted } from 'vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+onMounted(() => {
+  AOS.init();
+});
+
 </script>
 
 <style scoped>

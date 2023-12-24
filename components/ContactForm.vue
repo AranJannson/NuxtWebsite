@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="handleSubmit" class="contact-form">
+  <form @submit.prevent="handleSubmit" class="contact-form" data-aos="fade-up" data-aos-delay="300">
     <h2 style="color: #1a1d20" class="text-center">Contact</h2>
     <div class="form-group">
       <label for="name">Name:</label>
