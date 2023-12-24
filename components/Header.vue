@@ -16,7 +16,7 @@
 <!--        <NuxtLink class="text-white no-underline text-6xl" to="/">Aran Jannson</NuxtLink>-->
 <!--      </h2>-->
 
-      <NuxtLink to="/" style="padding: 0; margin: 0;">
+      <NuxtLink :to="localePath('/')" style="padding: 0; margin: 0;">
         <img src="/favicon.png" alt="Aran Jannson Logo" class="mx-auto" style="width: 120px;">
       </NuxtLink>
 
