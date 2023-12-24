@@ -117,7 +117,7 @@ const handleTouchMove = (e) => {
 };
 
 const handleTouchEnd = () => {
-  autoScrollInterval.value = setInterval(nextSlide, 7000); // Each 1000 = 1 second
+  autoScrollInterval.value = setInterval(nextSlide, 4000); // Each 1000 = 1 second
   const threshold = 50;
   if (touchStartX.value - touchEndX.value > threshold) {
     nextSlide();
@@ -127,7 +127,7 @@ const handleTouchEnd = () => {
 };
 
 onMounted(() => {
-  autoScrollInterval.value = setInterval(nextSlide, 7000); // Each 1000 = 1 second
+  autoScrollInterval.value = setInterval(nextSlide, 4000); // Each 1000 = 1 second
 });
 
 onUnmounted(() => {

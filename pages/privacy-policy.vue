@@ -1,5 +1,11 @@
 <script setup lang="ts">
 
+definePageMeta({
+  title: 'Privacy Policy',
+  description: 'Aran Jannson\'s Portfolio Website Privacy Policy',
+  image: '~/public/favicon.png',
+})
+
 </script>
 
 <template>

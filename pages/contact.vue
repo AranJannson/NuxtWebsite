@@ -14,6 +14,12 @@ export default {
     ContactForm
   }
 };
+
+definePageMeta({
+  title: 'Contact Page',
+  description: 'Aran Jannson\'s Portfolio Website Contact Page',
+  image: '~/public/favicon.png',
+})
 </script>
 
 <style>

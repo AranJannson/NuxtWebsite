@@ -65,6 +65,12 @@ export default {
     }
   }
 };
+
+definePageMeta({
+  title: 'Socials Page',
+  description: 'Aran Jannson\'s Portfolio Website Socials Page',
+  image: '~/public/favicon.png',
+})
 </script>
 
 <style>

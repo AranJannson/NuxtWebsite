@@ -1,7 +1,6 @@
 export default {
   devtools: { enabled: true },
 
-
   postcss: {
     plugins: {
       'postcss-nesting': {},

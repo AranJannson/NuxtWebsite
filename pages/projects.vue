@@ -50,11 +50,16 @@ export default {
           language: 'Nuxt3',
           link: 'https://github.com/AranJannson/PortfolioWebsite'
         }
-        // Add more projects with their details and image URLs
       ]
     };
   }
 };
+
+definePageMeta({
+  title: 'Projects Page',
+  description: 'Aran Jannson\'s Portfolio Website Projects Page',
+  image: '~/public/favicon.png',
+})
 </script>
 
 <style scoped>
