@@ -7,16 +7,16 @@
         <div class="footer-section">
           <h3>{{ $t('pages') }}</h3>
           <ul>
-            <li><NuxtLink class="gradient-text" to="/">{{ $t('home') }}</NuxtLink></li>
-            <li><NuxtLink class="gradient-text" to="/socials">{{ $t('socials') }}</NuxtLink></li>
-            <li><NuxtLink class="gradient-text" to="/projects">{{ $t('projects') }}</NuxtLink></li>
-            <li><NuxtLink class="gradient-text" to="/contact">{{ $t('contact') }}</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" :to="localePath('/')">{{ $t('home') }}</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" :to="localePath('/socials')">{{ $t('socials') }}</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" :to="localePath('/projects')">{{ $t('projects') }}</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" :to="localePath('/contact')">{{ $t('contact') }}</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>{{ $t('importantInformation') }}</h3>
           <ul>
-            <li><NuxtLink class="gradient-text" to="/privacy-policy">{{ $t('privacyPolicy') }}</NuxtLink></li>
+            <li><NuxtLink class="gradient-text" :to="localePath('/privacy-policy')">{{ $t('privacyPolicy') }}</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -47,7 +47,12 @@
   </div>
 </template>
 
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>
+
 <script lang="ts">
+
 import { defineComponent, ref, computed } from 'vue';
 
 export default defineComponent({

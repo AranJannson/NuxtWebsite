@@ -22,13 +22,13 @@
 
       <ul class="navBarList" style="list-style: none; display: flex; justify-content: center; padding: 0 0 30px;">
         <li style="margin: 0 10px;">
-          <NuxtLink class="gradient-text" to="/">{{ $t('home') }}</NuxtLink>
+          <NuxtLink class="gradient-text" :to="localePath('/')">{{ $t('home') }}</NuxtLink>
         </li>
         <li style="margin: 0 10px;">
-          <NuxtLink class="gradient-text" to="/projects">{{ $t('projects') }}</NuxtLink>
+          <NuxtLink class="gradient-text" :to="localePath('/projects')">{{ $t('projects') }}</NuxtLink>
         </li>
         <li style="margin: 0 10px;">
-          <NuxtLink class="gradient-text" to="/contact">{{ $t('contact') }}</NuxtLink>
+          <NuxtLink class="gradient-text" :to="localePath('/contact')">{{ $t('contact') }}</NuxtLink>
         </li>
       </ul>
     </div>
@@ -37,4 +37,6 @@
 
 <script setup>
 const { locale } = useI18n()
+const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
 </script>
