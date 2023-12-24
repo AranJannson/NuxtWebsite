@@ -3,7 +3,7 @@
   <div class="about-container">
     <div class="about-card">
       <h2>
-        About
+        {{ $t('about') }}
       </h2>
 
       <div class="pb-3">
@@ -23,7 +23,7 @@
     </div>
     <div class="about-card">
       <h2>
-        My Most Popular Projects
+        {{ $t('myMostPopularProjects') }}
       </h2>
       <ProjectCarousel />
     </div>

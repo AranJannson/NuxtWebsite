@@ -1,7 +1,7 @@
 <template>
   <div class="skills-container">
-    <h2 class="skills-title">My Skills</h2>
-    <p class="skills-description">I have experience in a wide range of programming languages, frameworks, and technologies. Always eager to learn more and expand my skillset.</p>
+    <h2 class="skills-title">{{ $t('mySkills') }}</h2>
+    <p class="skills-description">{{ $t('mySkillsDescription') }}</p>
     <div class="skills-list">
       <!-- Programming Languages -->
       <span class="skill-tag">Bash</span>

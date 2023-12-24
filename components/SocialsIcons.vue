@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <h2>Find Me At</h2>
+    <h2>{{ $t('findMeAt') }}</h2>
   </div>
   <div class="social-container">
     <a href="https://www.linkedin.com/in/aranjannson/" target="_blank" class="social-button">

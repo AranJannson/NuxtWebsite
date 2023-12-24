@@ -3,9 +3,9 @@
   <title>Home | AranJannson</title>
 
   <div class="welcomeBox" data-aos="fade-right" data-aos-delay="300">
-    <h2>Welcome!</h2>
-    <p style="color:gainsboro;">Hello, My Name Is <b>Aran Jannson</b>. I am a second-year undergraduate student studying Computer Science at <a class="uni-link" href="https://www.surrey.ac.uk/">The University Of Surrey</a>.</p>
-    <p style="color:gainsboro;">Welcome to my portfolio website! Here, you can explore my most popular GitHub projects, find ways to reach me, and discover more details about myself.</p>
+    <h2>{{ $t('welcome') }}!</h2>
+    <p style="color:gainsboro;">{{ $t('helloMyNameIs') }} <b>Aran Jannson</b>. {{ $t('undergradDescription') }} <a class="uni-link" href="https://www.surrey.ac.uk/">{{ $t('universityOfSurrey') }}</a>.</p>
+    <p style="color:gainsboro;">{{ $t('welcomePortfolio') }}</p>
   </div>
 
   <div data-aos="fade-left" data-aos-delay="300">
@@ -49,6 +49,8 @@ definePageMeta({
 </script>
 
 <script setup>
+
+const { locale } = useI18n()
 
 import { onMounted } from 'vue'
 import AOS from 'aos'

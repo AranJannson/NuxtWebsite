@@ -41,5 +41,22 @@
   "projects": "Projeler",
   "name": "İsim",
   "message": "Mesaj",
-  "privacyPolicy": "Gizlilik Politikası"
+  "privacyPolicy": "Gizlilik Politikası",
+  "mySkills": "Becerilerim",
+  "mySkillsDescription": "Birçok programlama dili, çerçeve ve teknolojide deneyime sahibim. Daha fazlasını öğrenmeye ve beceri setimi genişletmeye her zaman hevesliyim.",
+  "intro": "Merhaba, Benim Adım Aran Jannson. Surrey Üniversitesi'nde Bilgisayar Bilimi üzerine ikinci yıl lisans öğrencisiyim.",
+  "welcomePortfolio": "Portföy web siteme hoş geldiniz! Burada, en popüler GitHub projelerimi keşfedebilir, bana ulaşmanın yollarını bulabilir ve kendimle ilgili daha fazla detay öğrenebilirsiniz.",
+  "pages": "Sayfalar",
+  "importantInformation": "Önemli Bilgiler",
+  "externalLinks": "Harici Bağlantılar",
+  "iconsFrom": "İkonlar Tarafından",
+  "poweredBy": "Tarafından Desteklenmektedir",
+  "copyright": "Telif Hakkı © ",
+  "copyrightEnd": "Aran Jannson - Tüm Hakları Saklıdır.",
+  "myMostPopularProjects": "En Popüler Projelerim",
+  "helloMyNameIs": "Merhaba, Benim Adım",
+  "undergradDescription": "Bilgisayar Bilimi üzerine ikinci yıl lisans öğrencisiyim,",
+  "universityOfSurrey": "Surrey Üniversitesi'nde",
+  "findMeAt": "Beni şurada bulun",
+  "socials": "Sosyal Medya"
 }

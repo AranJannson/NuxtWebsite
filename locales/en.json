@@ -41,5 +41,21 @@
   "projects": "Projects",
   "name": "Name",
   "message": "Message",
-  "privacyPolicy": "Privacy Policy"
+  "privacyPolicy": "Privacy Policy",
+  "mySkills": "My Skills",
+  "mySkillsDescription": "I have experience in a wide range of programming languages, frameworks, and technologies. Always eager to learn more and expand my skillset.",
+  "welcomePortfolio": "Welcome to my portfolio website! Here, you can explore my most popular GitHub projects, find ways to reach me, and discover more details about myself.",
+  "pages": "Pages",
+  "importantInformation": "Important Information",
+  "externalLinks": "External Links",
+  "iconsFrom": "Icons From",
+  "poweredBy": "Powered by",
+  "copyright": "Copyright © ",
+  "copyrightEnd": "Aran Jannson - All Rights Reserved.",
+  "myMostPopularProjects": "My Most Popular Projects",
+  "helloMyNameIs": "Hello, My Name Is",
+  "undergradDescription": "I am a second-year undergraduate student studying Computer Science at",
+  "universityOfSurrey": "The University of Surrey",
+  "findMeAt": "Find Me At",
+  "socials": "Socials"
 }
