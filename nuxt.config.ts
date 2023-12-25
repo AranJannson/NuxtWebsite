@@ -6,8 +6,8 @@ export default {
   ],
 
   i18n: {
-    vueI18n: '~/i18n.config.ts', // if you are using custom path, default
-    locales: ['en', 'fr', 'tr', 'el'],  // used in URL path prefix
+    vueI18n: '~/i18n.config.ts',
+    locales: ['en', 'tr', 'el'],  // used in URL path prefix
     defaultLocale: 'en',
 },
 
