@@ -4,7 +4,7 @@
 
   <div class="welcomeBox" data-aos="fade-right" data-aos-delay="300">
     <h2>{{ $t('welcome') }}!</h2>
-    <p style="color:gainsboro;">{{ $t('helloMyNameIs') }} <b>Aran Jannson</b>. {{ $t('undergradDescription') }} <a class="uni-link" href="https://www.surrey.ac.uk/">{{ $t('universityOfSurrey') }}</a>.</p>
+    <p style="color:gainsboro;">{{ $t('helloMyNameIs') }} <b class="gradient-text">Aran Jannson</b>. {{ $t('undergradDescription') }} <a class="uni-link" href="https://www.surrey.ac.uk/">{{ $t('universityOfSurrey') }}</a>.</p>
     <p style="color:gainsboro;">{{ $t('welcomePortfolio') }}</p>
   </div>
 

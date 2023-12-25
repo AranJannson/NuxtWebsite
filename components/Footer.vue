@@ -7,35 +7,35 @@
         <div class="footer-section">
           <h3>{{ $t('pages') }}</h3>
           <ul>
-            <li><NuxtLink class="gradient-text" :to="localePath('/')">{{ $t('home') }}</NuxtLink></li>
-            <li><NuxtLink class="gradient-text" :to="localePath('/socials')">{{ $t('socials') }}</NuxtLink></li>
-            <li><NuxtLink class="gradient-text" :to="localePath('/projects')">{{ $t('projects') }}</NuxtLink></li>
-            <li><NuxtLink class="gradient-text" :to="localePath('/contact')">{{ $t('contact') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/')">{{ $t('home') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/socials')">{{ $t('socials') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/projects')">{{ $t('projects') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/contact')">{{ $t('contact') }}</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>{{ $t('importantInformation') }}</h3>
           <ul>
-            <li><NuxtLink class="gradient-text" :to="localePath('/privacy-policy')">{{ $t('privacyPolicy') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/privacy-policy')">{{ $t('privacyPolicy') }}</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>{{ $t('externalLinks') }}</h3>
           <ul>
-            <li><NuxtLink class="gradient-text" href="https://files.aranjannson.com" target="_blank" rel="noopener noreferrer">files.aranjannson</NuxtLink></li>
+            <li><NuxtLink href="https://files.aranjannson.com" target="_blank" rel="noopener noreferrer">files.aranjannson</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>{{ $t('iconsFrom') }}</h3>
           <ul>
-            <li><NuxtLink class="gradient-text" href="https://material.io/resources/icons/?style=round" target="_blank" rel="noopener noreferrer" >Google</NuxtLink></li>
-            <li><NuxtLink class="gradient-text" href="https://icons8.com/" target="_blank" rel="noopener noreferrer" >Icon8</NuxtLink></li>
+            <li><NuxtLink href="https://material.io/resources/icons/?style=round" target="_blank" rel="noopener noreferrer" >Google</NuxtLink></li>
+            <li><NuxtLink href="https://icons8.com/" target="_blank" rel="noopener noreferrer" >Icon8</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>{{ $t('poweredBy') }}</h3>
           <ul>
-            <li><NuxtLink class="gradient-text" href="" target="_blank" rel="noopener noreferrer" >TwentyDimension</NuxtLink></li>
+            <li><NuxtLink href="" target="_blank" rel="noopener noreferrer" >TwentyDimension</NuxtLink></li>
           </ul>
         </div>
       </div>

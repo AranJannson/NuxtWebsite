@@ -92,7 +92,7 @@ onMounted(() => {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   &:hover{
-    transform: translateY(-5px);
+    transform: scale(1.05);
   }
 }
 

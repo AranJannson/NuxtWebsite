@@ -1,13 +1,11 @@
 <template>
   <div class="header">
     <div class="text-black position-absolute top-0 p-4" style="z-index: 99; right: 0;">
-      <form>
-        <select v-model="locale" class="bg-white border border-gray-300 text-gray-700 rounded focus:outline-none focus:border-blue-500">
-          <option value="en">en</option>
-          <option value="tr">tr</option>
-          <option value="el">el</option>
-        </select>
-      </form>
+      <select @change="changeLocale" class="bg-white border border-gray-300 text-gray-700 rounded focus:outline-none focus:border-blue-500">
+        <option value="en">en</option>
+        <option value="tr">tr</option>
+        <option value="el">el</option>
+      </select>
     </div>
 
     <div class="slanted"></div>
@@ -16,19 +14,19 @@
 <!--        <NuxtLink class="text-white no-underline text-6xl" to="/">Aran Jannson</NuxtLink>-->
 <!--      </h2>-->
 
-      <NuxtLink :to="localePath('/')" style="padding: 0; margin: 0;">
-        <img src="/favicon.png" alt="Aran Jannson Logo" class="mx-auto" style="width: 120px;">
+      <NuxtLink :to="localePath('/')" class="logo">
+        <img src="/favicon.png" alt="Site Logo" class="mx-auto" style="width: 120px;">
       </NuxtLink>
 
       <ul class="navBarList" style="list-style: none; display: flex; justify-content: center; padding: 0 0 30px;">
         <li style="margin: 0 10px;">
-          <NuxtLink class="gradient-text" :to="localePath('/')">{{ $t('home') }}</NuxtLink>
+          <NuxtLink :to="localePath('/')">{{ $t('home') }}</NuxtLink>
         </li>
         <li style="margin: 0 10px;">
-          <NuxtLink class="gradient-text" :to="localePath('/projects')">{{ $t('projects') }}</NuxtLink>
+          <NuxtLink :to="localePath('/projects')">{{ $t('projects') }}</NuxtLink>
         </li>
         <li style="margin: 0 10px;">
-          <NuxtLink class="gradient-text" :to="localePath('/contact')">{{ $t('contact') }}</NuxtLink>
+          <NuxtLink :to="localePath('/contact')">{{ $t('contact') }}</NuxtLink>
         </li>
       </ul>
     </div>
@@ -38,5 +36,34 @@
 <script setup>
 const { locale } = useI18n()
 const localePath = useLocalePath()
-const switchLocalePath = useSwitchLocalePath()
 </script>
+
+<script>
+export default {
+  methods: {
+    changeLocale(event) {
+      const newLocale = event.target.value;
+      this.$router.push(this.switchLocalePath(newLocale));
+    }
+  }
+}
+</script>
+
+<style>
+
+.logo{
+
+  padding: 0;
+  margin: 0;
+
+  img{
+
+    transition: transform 0.3s ease;
+
+    &:hover{
+      transform: scale(1.15);
+    }
+  }
+
+}
+</style>

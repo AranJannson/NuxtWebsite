@@ -58,6 +58,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: calc(50% - 100px);
   transition: transform 0.3s ease;
+  //scale: 0.95;
 
   @media screen and (max-width: 800px) {
     width: 98%;
@@ -71,7 +72,7 @@
   }
 
   &:hover{
-    transform: translateY(-5px);
+    transform: scale(1.01);
   }
 }
 
