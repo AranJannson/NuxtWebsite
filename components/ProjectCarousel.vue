@@ -9,13 +9,13 @@
     >
       <div v-for="(project, index) in projects" :key="index" class="slide">
         <div class="project-details">
-          <h2><a :href="project.link" class="projectTitle">{{ project.name }}</a></h2>
-          <p>{{ project.description }}</p>
+          <h2><a :href="project.link" class="projectTitle">{{ $t(project.name) }}</a></h2>
+          <p>{{ $t(project.description) }}</p>
           <a :href="project.link">
             <img :src="project.imageUrl" alt="Project Image">
           </a>
           <div>
-            <p>Language: </p>
+            <p>{{ $t('language') }}: </p>
             <p :class="`${project.language.toLowerCase()}-text`">{{ project.language }}</p>
           </div>
         </div>
@@ -25,8 +25,8 @@
       <div class="slide-number">{{ displayIndex }} / {{ maxIndex }}</div>
     </div>
     <div class="align-content-center">
-      <button style="margin: 0.5rem" class="btn btn-dark" @click="prevSlide">Previous</button>
-      <button style="margin: 0.5rem" class="btn btn-dark" @click="nextSlide">Next</button>
+      <button style="margin: 0.5rem" class="btn btn-dark" @click="prevSlide">{{ $t('previous') }}</button>
+      <button style="margin: 0.5rem" class="btn btn-dark" @click="nextSlide">{{ $t('next') }}</button>
     </div>
   </div>
 </template>
@@ -36,22 +36,22 @@ import { ref, reactive, onMounted, onUnmounted } from 'vue';
 
 const originalProjects = [
   {
-    name: 'Java For Beginners',
-    description: 'A list of tasks in Java to learn the core concepts',
+    name: 'projectJavaForBeginnersName',
+    description: 'projectJavaForBeginnersDescription',
     imageUrl: 'https://aranjannson.com/Pictures/javaForBeginners.png',
     language: 'Java',
     link: 'https://github.com/AranJannson/Java-For-Beginners',
   },
   {
-    name: 'Surrey CompSoc Webapp',
-    description: 'As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new web application for the society.',
+    name: 'projectSurreyCompSocWebappName',
+    description: 'projectSurreyCompSocWebappDescription',
     imageUrl: 'https://aranjannson.com/Pictures/compsoc_logo_color_transparent.png',
     language: 'Nuxt2',
     link: 'https://github.com/surreycompsoc/website',
   },
   {
-    name: 'Portfolio Website',
-    description: 'The github repository for this website',
+    name: 'projectPortfolioWebsiteName',
+    description: 'projectPortfolioWebsiteDescription',
     imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
     language: 'Nuxt3',
     link: 'https://github.com/AranJannson/PortfolioWebsite'
@@ -59,7 +59,6 @@ const originalProjects = [
 ];
 
 const displayIndex = computed(() => {
-  // Adjust the index to account for the dummy slides
   if (currentIndex.value === 0) {
     return originalProjects.length;
   } else if (currentIndex.value === projects.length - 1) {

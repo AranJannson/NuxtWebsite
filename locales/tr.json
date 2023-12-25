@@ -61,5 +61,17 @@
   "socials": "Sosyal Medya",
   "nameIsRequired": "İsim gerekli",
   "emailIsRequired": "E-posta gerekli",
-  "messageIsRequired": "Mesaj gerekli"
+  "messageIsRequired": "Mesaj gerekli",
+  "githubLink": "GitHub Bağlantısı",
+  "privacyPolicyPart1": "Aran Jannson'un portföy sitesini ziyaret ettiğiniz için teşekkür ederiz. Bu web sitesi, yalnızca bilgilendirme amaçlı dış sitelere bağlantılar içerir. Ziyaretçilerden herhangi bir kişisel bilgi toplamıyoruz.",
+  "privacyPolicyPart2": "Lütfen dikkate alınız ki, bir dış bağlantıya tıkladığınızda, o siteye yönlendirileceksiniz. Bu web sitelerinin gizlilik politikalarını gözden geçirmenizi öneririz, çünkü bunlar bizimkilerden farklı olabilir. Bu dış sitelerin içeriğinden veya gizlilik uygulamalarından hiçbir sorumluluk kabul etmiyoruz.",
+  "privacyPolicyPart3": "Sitemizi gezinirken hiçbir kişisel bilgi toplanmamakta veya saklanmamaktadır. Herhangi bir bilgi toplamak için çerezleri veya takip teknolojilerini kullanmıyoruz.",
+  "privacyPolicyPart4": "Gizliliğiniz bizim için önemlidir ve biz, bizimle paylaşmayı tercih ettiğiniz herhangi bir bilginin gizliliğini korumaya kendimizi adamış durumdayız. Bu gizlilik beyanı ile ilgili herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin.",
+  "previous": "Önceki",
+  "projectJavaForBeginnersDescription": "Java'da temel kavramları öğrenmek için bir görev listesi",
+  "projectSurreyCompSocWebappDescription": "Surrey Üniversitesi Bilişim Topluluğu'nun Web Ustası olarak, topluluk için yeni bir web uygulaması oluşturma görevi aldım.",
+  "projectPortfolioWebsiteDescription": "Bu web sitesi için GitHub deposu",
+  "projectJavaForBeginnersName": "Başlangıç Seviyesi İçin Java",
+  "projectSurreyCompSocWebappName": "Surrey CompSoc Web Uygulaması",
+  "projectPortfolioWebsiteName": "Portföy Web Sitesi"
 }

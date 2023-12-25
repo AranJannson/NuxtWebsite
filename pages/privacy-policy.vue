@@ -13,15 +13,13 @@ definePageMeta({
   <title>{{ $t('privacyPolicy') }} | AranJannson</title>
 
   <div class="privacy-policy">
-    <h2>Privacy Policy</h2>
+    <h2>{{ $t('privacyPolicy') }}</h2>
 
-    <p>Thank you for visiting Aran Jannson's portfolio site. This website contains links to external sites for informational purposes only. We do not collect any personal information from visitors.</p>
+    <p>{{ $t('privacyPolicyPart1') }}</p>
+    <p>{{ $t('privacyPolicyPart2') }}</p>
+    <p>{{ $t('privacyPolicyPart3') }}</p>
+    <p>{{ $t('privacyPolicyPart4') }}</p>
 
-    <p>Please note that once you click on an external link, you will be directed to that site. We encourage you to review the privacy policies of those websites as they may differ from ours. We hold no responsibility for the content or privacy practices of these external sites.</p>
-
-    <p>While browsing our site, no personal information is gathered or stored. We do not use cookies or tracking technologies to collect any information.</p>
-
-    <p>Your privacy is important to us, and we are committed to maintaining the confidentiality of any information you choose to share with us. If you have any questions about this privacy statement, please contact us.</p>
   </div>
 </template>
 

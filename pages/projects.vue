@@ -14,8 +14,8 @@
         </NuxtLink>
       </div>
       <div class="project-details">
-        <h2 class="project-name">{{ project.name }}</h2>
-        <p class="project-description">{{ project.description }}</p>
+        <h2 class="project-name">{{ $t(project.name) }}</h2>
+        <p class="project-description">{{ $t(project.description) }}</p>
         <p>{{ $t('language') }}: {{ project.language }}</p>
         <NuxtLink class="gradient-text" :href="project.link" target="_blank" rel="noopener noreferrer">{{ $t('githubLink') }}</NuxtLink>
       </div>
@@ -30,22 +30,22 @@ export default {
       currentIndex: null,
       projects: [
         {
-          name: 'Java For Beginners',
-          description: 'A list of tasks in Java to learn the core concepts',
+          name: 'projectJavaForBeginnersName',
+          description: 'projectJavaForBeginnersDescription',
           imageUrl: 'https://aranjannson.com/Pictures/javaForBeginners.png',
           language: 'Java',
           link: 'https://github.com/AranJannson/Java-For-Beginners',
         },
         {
-          name: 'Surrey CompSoc Webapp',
-          description: 'As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new web application for the society.',
+          name: 'projectSurreyCompSocWebappName',
+          description: 'projectSurreyCompSocWebappDescription',
           imageUrl: 'https://aranjannson.com/Pictures/compsoc_logo_color_transparent.png',
           language: 'Nuxt2',
           link: 'https://github.com/surreycompsoc/website',
         },
         {
-          name: 'Portfolio Website',
-          description: 'The github repository for this website',
+          name: 'projectPortfolioWebsiteName',
+          description: 'projectPortfolioWebsiteDescription',
           imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
           language: 'Nuxt3',
           link: 'https://github.com/AranJannson/PortfolioWebsite'

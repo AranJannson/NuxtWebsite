@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="handleSubmit" class="contact-form" data-aos="fade-up" data-aos-delay="300">
-    <h2 style="color: #1a1d20" class="text-center">{{ $t('contact') }}</h2>
+    <h2 style="color: white" class="text-center">{{ $t('contact') }}</h2>
     <div class="form-group">
       <label for="name">{{ $t('name') }}:</label>
       <input v-model="formData.name" type="text" id="name" name="name" required>
