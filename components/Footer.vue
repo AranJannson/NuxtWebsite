@@ -48,22 +48,10 @@
 </template>
 
 <script setup lang="ts">
-const localePath = useLocalePath()
-</script>
+import { ref } from 'vue';
 
-<script lang="ts">
-
-import { defineComponent, ref, computed } from 'vue';
-
-export default defineComponent({
-  setup() {
-    const currentYear = ref(new Date().getFullYear());
-
-    return {
-      currentYear: computed(() => currentYear.value),
-    };
-  },
-});
+const currentYear = ref(new Date().getFullYear());
+const localePath = useLocalePath();
 </script>
 
 <style scoped>
