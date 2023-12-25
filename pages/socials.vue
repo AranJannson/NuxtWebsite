@@ -1,6 +1,6 @@
 <template>
 
-  <title>Socials | AranJannson</title>
+  <title>{{ $t('socials') }} | AranJannson</title>
 
   <div class="headerTitle" style="display: flex; justify-content: space-between;">
     <div style="width: 50%;">

@@ -57,5 +57,8 @@
   "undergradDescription": "I am a second-year undergraduate student studying Computer Science at",
   "universityOfSurrey": "The University of Surrey",
   "findMeAt": "Find Me At",
-  "socials": "Socials"
+  "socials": "Socials",
+  "nameIsRequired": "Name is required",
+  "emailIsRequired": "Email is required",
+  "messageIsRequired": "Message is required"
 }

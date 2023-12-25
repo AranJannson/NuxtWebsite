@@ -58,5 +58,8 @@
   "undergradDescription": "Bilgisayar Bilimi üzerine ikinci yıl lisans öğrencisiyim,",
   "universityOfSurrey": "Surrey Üniversitesi'nde",
   "findMeAt": "Beni şurada bulun",
-  "socials": "Sosyal Medya"
+  "socials": "Sosyal Medya",
+  "nameIsRequired": "İsim gerekli",
+  "emailIsRequired": "E-posta gerekli",
+  "messageIsRequired": "Mesaj gerekli"
 }

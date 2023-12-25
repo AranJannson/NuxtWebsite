@@ -1,6 +1,6 @@
 <template>
 
-  <title>Contact | AranJannson</title>
+  <title>{{ $t('contact') }} | AranJannson</title>
 
   <br>
 

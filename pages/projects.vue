@@ -1,6 +1,6 @@
 <template>
 
-  <title>Projects | AranJannson</title>
+  <title>{{ $t('projects') }} | AranJannson</title>
 
   <div class="project-container" data-aos="fade-left" data-aos-delay="300">
     <div
@@ -16,8 +16,8 @@
       <div class="project-details">
         <h2 class="project-name">{{ project.name }}</h2>
         <p class="project-description">{{ project.description }}</p>
-        <p>Language: {{ project.language }}</p>
-        <NuxtLink class="gradient-text" :href="project.link" target="_blank" rel="noopener noreferrer">GitHub Link</NuxtLink>
+        <p>{{ $t('language') }}: {{ project.language }}</p>
+        <NuxtLink class="gradient-text" :href="project.link" target="_blank" rel="noopener noreferrer">{{ $t('githubLink') }}</NuxtLink>
       </div>
     </div>
   </div>

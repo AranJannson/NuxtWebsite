@@ -1,22 +1,22 @@
 <template>
   <form @submit.prevent="handleSubmit" class="contact-form" data-aos="fade-up" data-aos-delay="300">
-    <h2 style="color: #1a1d20" class="text-center">Contact</h2>
+    <h2 style="color: #1a1d20" class="text-center">{{ $t('contact') }}</h2>
     <div class="form-group">
-      <label for="name">Name:</label>
+      <label for="name">{{ $t('name') }}:</label>
       <input v-model="formData.name" type="text" id="name" name="name" required>
-      <span v-if="!formData.name" class="error-message">Name is required</span>
+      <span v-if="!formData.name" class="error-message">{{ $t('nameIsRequired') }}</span>
     </div>
     <div class="form-group">
-      <label for="email">Email:</label>
+      <label for="email">{{ $t('email') }}:</label>
       <input v-model="formData.email" type="email" id="email" name="email" required>
-      <span v-if="!formData.email" class="error-message">Email is required</span>
+      <span v-if="!formData.email" class="error-message">{{ $t('emailIsRequired') }}</span>
     </div>
     <div class="form-group">
-      <label for="message">Message:</label>
+      <label for="message">{{ $t('message') }}:</label>
       <textarea v-model="formData.message" id="message" name="message" required></textarea>
-      <span v-if="!formData.message" class="error-message">Message is required</span>
+      <span v-if="!formData.message" class="error-message">{{ $t('messageIsRequired') }}</span>
     </div>
-    <button type="submit" class="submit-button">Submit</button>
+    <button type="submit" class="submit-button">{{ $t('submit') }}</button>
   </form>
 </template>
 

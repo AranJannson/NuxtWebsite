@@ -58,5 +58,8 @@
   "undergradDescription": "Είμαι φοιτητής δεύτερου έτους στην Πληροφορική στο",
   "universityOfSurrey": "Πανεπιστήμιο του Surrey",
   "findMeAt": "Βρείτε με στο",
-  "socials": "Κοινωνικά Δίκτυα"
+  "socials": "Κοινωνικά Δίκτυα",
+  "nameIsRequired": "Το όνομα απαιτείται",
+  "emailIsRequired": "Το email απαιτείται",
+  "messageIsRequired": "Το μήνυμα απαιτείται"
 }

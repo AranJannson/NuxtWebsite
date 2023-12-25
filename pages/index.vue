@@ -1,6 +1,6 @@
 <template>
 
-  <title>Home | AranJannson</title>
+  <title>{{ $t('home') }} | AranJannson</title>
 
   <div class="welcomeBox" data-aos="fade-right" data-aos-delay="300">
     <h2>{{ $t('welcome') }}!</h2>
