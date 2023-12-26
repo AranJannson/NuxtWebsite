@@ -36,6 +36,12 @@
 <script setup>
 const { locale } = useI18n()
 const localePath = useLocalePath()
+
+definePageMeta({
+  title: 'Header',
+  description: 'Page Header',
+})
+
 </script>
 
 <script>

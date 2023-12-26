@@ -34,6 +34,11 @@
 
 <script setup lang="ts">
 
+definePageMeta({
+  title: 'About Cards',
+  description: 'Cards Used to display about information and project carousel',
+})
+
 </script>
 
 <style scoped>

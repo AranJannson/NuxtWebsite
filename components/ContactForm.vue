@@ -21,6 +21,13 @@
 </template>
 
 <script>
+
+definePageMeta({
+  title: 'Contact Form',
+  description: 'Contact Form',
+})
+
+
 import { ref } from 'vue';
 
 export default {

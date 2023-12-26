@@ -50,6 +50,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+
+definePageMeta({
+  title: 'Footer',
+  description: 'Page Footer',
+});
+
 const currentYear = ref(new Date().getFullYear());
 const localePath = useLocalePath();
 </script>

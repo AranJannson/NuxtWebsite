@@ -34,6 +34,11 @@
 <script setup>
 import { ref, reactive, onMounted, onUnmounted } from 'vue';
 
+definePageMeta({
+  title: 'Projects Carousel',
+  description: 'Projects Carousel',
+});
+
 const originalProjects = [
   {
     name: 'projectJavaForBeginnersName',

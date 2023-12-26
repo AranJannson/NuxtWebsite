@@ -15,6 +15,15 @@
   </div>
 </template>
 
+<script setup lang="ts">
+
+definePageMeta({
+  title: 'Socials',
+  description: 'Socials Links',
+})
+
+</script>
+
 <style scoped>
 .social-container {
   display: flex;

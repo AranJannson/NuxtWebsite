@@ -41,6 +41,11 @@
 
 <script setup lang="ts">
 
+definePageMeta({
+  title: 'Skills',
+  description: 'Skills List',
+});
+
 </script>
 
 <style scoped>
