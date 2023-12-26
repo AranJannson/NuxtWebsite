@@ -1,4 +1,6 @@
 <template>
+  
+  <img src="~/assets/images/favicon.png" style="display: none;" alt="">
 
   <a href="https://www.linkedin.com/in/aranjannson/" target="_blank">
     <div class="linkedInOverlay">
@@ -7,9 +9,7 @@
   </a>
 
   <Header/>
-  <transition name="fade" mode="out-in">
   <NuxtPage/>
-  </transition>
   <Footer/>
 
 

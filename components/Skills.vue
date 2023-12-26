@@ -3,6 +3,7 @@
     <h2 class="skills-title">{{ $t('mySkills') }}</h2>
     <p class="skills-description">{{ $t('mySkillsDescription') }}</p>
     <div class="skills-list">
+
       <!-- Programming Languages -->
       <span class="skill-tag">Bash</span>
       <span class="skill-tag">C++</span>

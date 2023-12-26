@@ -15,7 +15,7 @@
 <!--      </h2>-->
 
       <NuxtLink :to="localePath('/')" class="logo">
-        <img src="/favicon.png" alt="Site Logo" class="mx-auto" style="width: 120px;">
+        <img src="~/assets/images/favicon.png" alt="Site Logo" class="mx-auto" style="width: 120px;">
       </NuxtLink>
 
       <ul class="navBarList" style="list-style: none; display: flex; justify-content: center; padding: 0 0 30px;">
