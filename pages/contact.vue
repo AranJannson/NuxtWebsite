@@ -18,9 +18,14 @@ export default {
 };
 
 definePageMeta({
-  title: 'Contact Page',
-  description: 'Aran Jannson\'s Portfolio Website Contact Page',
-  image: '~/public/favicon.png',
+  return: {
+    title: 'Contact Page',
+    meta: [
+      { name: 'description', content: 'Aran Jannson\'s Portfolio Website Contact Page' },
+      // Open Graph Image
+      { property: 'og:image', content: '~assets/images/thumbnails/contact.jpg' } // Assuming favicon.png is directly inside the public directory
+    ]
+  }
 })
 </script>
 

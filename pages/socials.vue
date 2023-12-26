@@ -67,9 +67,14 @@ export default {
 };
 
 definePageMeta({
-  title: 'Socials Page',
-  description: 'Aran Jannson\'s Portfolio Website Socials Page',
-  image: '~/public/favicon.png',
+  return: {
+    title: 'Socials Page',
+    meta: [
+      { name: 'description', content: 'Aran Jannson\'s Portfolio Website Socials Page' },
+      // Open Graph Image
+      { property: 'og:image', content: '~assets/images/thumbnails/socials.jpg' } // Adjust the path to your image
+    ]
+  }
 })
 </script>
 
