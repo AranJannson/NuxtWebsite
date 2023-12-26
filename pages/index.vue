@@ -43,11 +43,8 @@ export default {
 
 definePageMeta({
   title: 'Home Page',
-  meta: [
-    { name: 'description', content: 'Aran Jannson\'s Portfolio Website Home Page' },
-    // Open Graph Image
-    { property: 'og:image', content: '~assets/images/thumbnails/home.jpg' } // Adjust the path as needed
-  ]
+  description: 'Aran Jannson\'s Portfolio Website Home Page',
+  image: '/thumbnails/home.jpg',
 })
 </script>
 

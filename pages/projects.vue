@@ -57,11 +57,8 @@ export default {
 
 definePageMeta({
   title: 'Projects Page',
-  meta: [
-    { name: 'description', content: 'Aran Jannson\'s Portfolio Website Projects Page' },
-    // Open Graph Image
-    { property: 'og:image', content: '~assets/images/thumbnails/projects.jpg' } // Assuming favicon.png is directly inside the public directory
-  ]
+  description: 'Aran Jannson\'s Portfolio Website Projects Page',
+  image: '/thumbnails/projects.jpg',
 })
 </script>
 

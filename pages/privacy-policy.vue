@@ -1,14 +1,9 @@
 <script setup lang="ts">
 
 definePageMeta({
-  return: {
-    title: 'Privacy Policy',
-    meta: [
-      { name: 'description', content: 'Aran Jannson\'s Portfolio Website Privacy Policy' },
-      // Open Graph Image
-      { property: 'og:image', content: '~assets/images/thumbnails/privacyPolicy.jpg' } // Adjust the path to your image
-    ]
-  }
+  title: 'Privacy Policy',
+  description: 'Aran Jannson\'s Portfolio Website Privacy Policy',
+  image: '/thumbnails/privacyPolicy.jpg',
 })
 
 </script>
