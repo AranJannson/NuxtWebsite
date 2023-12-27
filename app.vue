@@ -25,8 +25,8 @@ useHead({
     { property: 'og:description', content: `${route.meta.description}` },
     { property: 'og:image', content: `${route.meta.image}` },
     { property: 'og:type', content: 'website' },
-    {property: 'og:image:height', content: `1920`},
-    {property: 'og:image:width', content: `1079`},
+    {property: 'og:image:height', content: `1079`},
+    {property: 'og:image:width', content: `1920`},
 
     // { property: 'og:url', content: `https://aranjannson.com/${route.path}` },
     { property: 'twitter:card', content: 'summary_large_image' },
