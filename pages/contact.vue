@@ -18,7 +18,6 @@ export default {
 };
 
 definePageMeta({
-  title: 'Contact Page',
   description: 'Aran Jannson\'s Portfolio Website Contact Page',
   image: '/thumbnails/contact.jpg',
 })

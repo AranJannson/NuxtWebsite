@@ -67,7 +67,6 @@ export default {
 };
 
 definePageMeta({
-  title: 'Socials Page',
   description: 'Aran Jannson\'s Portfolio Website Socials Page',
   image: '/thumbnails/socials.jpg',
 })
