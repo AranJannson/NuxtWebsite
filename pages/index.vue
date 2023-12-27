@@ -42,6 +42,7 @@ export default {
 };
 
 definePageMeta({
+  title: 'Home',
   description: 'Aran Jannson\'s Portfolio Website Home Page',
   image: '/thumbnails/home.jpg',
 })

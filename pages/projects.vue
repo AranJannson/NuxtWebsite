@@ -56,6 +56,7 @@ export default {
 };
 
 definePageMeta({
+  title: 'Projects',
   description: 'Aran Jannson\'s Portfolio Website Projects Page',
   image: '/thumbnails/projects.jpg',
 })

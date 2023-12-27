@@ -15,13 +15,19 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
+const { t } = useI18n();
+
 
 useHead({
   meta: [
+    {property: 'og:title', content: `${route.meta.title} | AranJannson`},
     { property: 'og:description', content: `${route.meta.description}` },
     { property: 'og:image', content: `${route.meta.image}` },
     { property: 'og:type', content: 'website' },
+    {property: 'og:image:height', content: `1920`},
+    {property: 'og:image:width', content: `1079`},
+
     // { property: 'og:url', content: `https://aranjannson.com/${route.path}` },
     { property: 'twitter:card', content: 'summary_large_image' },
     { property: 'twitter:description', content: `${route.meta.description}` },

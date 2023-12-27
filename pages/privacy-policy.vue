@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 definePageMeta({
+  title: 'Privacy Policy',
   description: 'Aran Jannson\'s Portfolio Website Privacy Policy',
   image: '/thumbnails/privacyPolicy.jpg',
 })
