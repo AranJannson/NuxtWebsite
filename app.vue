@@ -10,11 +10,14 @@
 
   <Header/>
   <NuxtPage/>
+  <CookiesConsent />
   <Footer/>
 
 </template>
 
 <script setup lang="ts">
+import CookiesConsent from "~/components/CookiesConsent.vue";
+
 const route = useRoute();
 const { t } = useI18n();
 
