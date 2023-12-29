@@ -1,9 +1,12 @@
 <template>
   <ClientOnly>
-    <div v-if="!consentGiven" class="cookie-consent">
-      <p>We use cookies to improve your experience on our site. By continuing, you agree to our use of cookies.</p>
-      <button @click="acceptCookies">Accept</button>
+    <div class="cookieContainer">
+      <div v-if="!consentGiven" class="cookie-consent">
+        <p>We use cookies to improve your experience on our site. By continuing, you agree to our use of cookies.</p>
+        <button @click="acceptCookies">Accept</button>
+      </div>
     </div>
+
   </ClientOnly>
 </template>
 
@@ -30,9 +33,21 @@ onMounted(() => {
 
 
 <style scoped>
+
+.cookieContainer{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .cookie-consent {
   position: fixed;
   bottom: 0;
+  border-radius: 10px;
+  margin: 1.5rem;
   left: 0;
   right: 0;
   color: white;
@@ -40,5 +55,21 @@ onMounted(() => {
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ccc;
+
+  button {
+    background-color: #44475a;
+    color: #f8f8f2;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: auto;
+
+    &:hover {
+      background-color: #6272a4;
+    }
+  }
 }
 </style>

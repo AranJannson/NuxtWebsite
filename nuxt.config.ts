@@ -18,6 +18,12 @@ export default {
     vueI18n: '~/i18n.config.ts',
     locales: ['en', 'tr', 'el'],  // used in URL path prefix
     defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,
+    },
   },
 
   layoutTransition: 'layout',

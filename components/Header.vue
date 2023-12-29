@@ -11,22 +11,18 @@
 
     <div class="slanted"></div>
     <div class="header-content">
-<!--      <h2 class="text-center text-white font-sans font-semibold text-6xl pt-8">-->
-<!--        <NuxtLink class="text-white no-underline text-6xl" to="/">Aran Jannson</NuxtLink>-->
-<!--      </h2>-->
-
       <NuxtLink :to="localePath('/')" class="logo">
-        <img src="~/assets/images/favicon.png" alt="Site Logo" class="mx-auto" style="width: 120px;">
+        <img src="~/assets/images/favicon.png" alt="Site Logo" class="mx-auto">
       </NuxtLink>
 
-      <ul class="navBarList" style="list-style: none; display: flex; justify-content: center; padding: 0 0 30px;">
-        <li style="margin: 0 10px;">
+      <ul class="navBarList" >
+        <li>
           <NuxtLink :to="localePath('/')">{{ $t('home') }}</NuxtLink>
         </li>
-        <li style="margin: 0 10px;">
+        <li>
           <NuxtLink :to="localePath('/projects')">{{ $t('projects') }}</NuxtLink>
         </li>
-        <li style="margin: 0 10px;">
+        <li>
           <NuxtLink :to="localePath('/contact')">{{ $t('contact') }}</NuxtLink>
         </li>
       </ul>
@@ -76,11 +72,43 @@ export default {
   img{
 
     transition: transform 0.3s ease;
+    width: 75px;
+    margin:20px;
 
     &:hover{
       transform: scale(1.15);
     }
   }
 
+}
+
+.navBarList{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 30px;
+
+}
+
+.navBarList{
+
+  li{
+    margin: 0 10px;
+    padding: 0 3px;
+
+
+    width: 90px;
+
+    text-align: center;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+
+    &:hover{
+      transform: scale(1.15);
+    }
+  }
 }
 </style>

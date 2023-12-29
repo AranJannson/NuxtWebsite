@@ -13,37 +13,37 @@ definePageMeta({
   <title>{{ $t('privacyPolicy') }} | AranJannson</title>
 
   <div class="privacy-policy">
-    <h2>{{ $t('privacyPolicyDesc.title') }}</h2>
+    <h2 data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.title') }}</h2>
 
-    <h3>{{ $t('privacyPolicyDesc.subtitle') }}</h3>
+    <h3 data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.subtitle') }}</h3>
 
-    <p>{{ $t('privacyPolicyDesc.paragraph1') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph1') }}</p>
 
-    <h3>{{ $t('privacyPolicyDesc.useOfCookies') }}</h3>
+    <h3 data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.useOfCookies') }}</h3>
 
-    <p>{{ $t('privacyPolicyDesc.paragraph2') }}</p>
-    <p>{{ $t('privacyPolicyDesc.paragraph3') }}</p>
-    <p>{{ $t('privacyPolicyDesc.paragraph4') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph2') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph3') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph4') }}</p>
 
-    <h3>{{ $t('privacyPolicyDesc.externalLinks') }}</h3>
+    <h3 data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.externalLinks') }}</h3>
 
-    <p>{{ $t('privacyPolicyDesc.paragraph5') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph5') }}</p>
 
-    <h3>{{ $t('privacyPolicyDesc.noPersonalInformationCollected') }}</h3>
+    <h3 data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.noPersonalInformationCollected') }}</h3>
 
-    <p>{{ $t('privacyPolicyDesc.paragraph6') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph6') }}</p>
 
-    <h3>{{ $t('privacyPolicyDesc.security') }}</h3>
+    <h3 data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.security') }}</h3>
 
-    <p>{{ $t('privacyPolicyDesc.paragraph7') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph7') }}</p>
 
-    <h3>{{ $t('privacyPolicyDesc.policyUpdates') }}</h3>
+    <h3 data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.policyUpdates') }}</h3>
 
-    <p>{{ $t('privacyPolicyDesc.paragraph8') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph8') }}</p>
 
-    <h3>{{ $t('privacyPolicyDesc.contactUs') }}</h3>
+    <h3 data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.contactUs') }}</h3>
 
-    <p>{{ $t('privacyPolicyDesc.paragraph9') }}</p>
+    <p data-aos="fade-left" data-aos-delay="300">{{ $t('privacyPolicyDesc.paragraph9') }}</p>
 
 
 

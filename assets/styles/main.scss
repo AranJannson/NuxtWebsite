@@ -266,6 +266,10 @@ h2{
   position: relative;
   overflow: hidden;
   height: 300px; // Adjust the height as needed
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 li {
@@ -315,6 +319,7 @@ li {
   text-align: center;
   z-index: 1;
   padding: 10px 0 60px; // Adjust top and bottom padding here
+
 }
 
 h1,

@@ -28,45 +28,35 @@ definePageMeta({
 })
 
 
-import { ref } from 'vue';
-
 export default {
-  setup() {
-    const formData = ref({
-      name: '',
-      email: '',
-      message: ''
-    });
-
-    const handleSubmit = () => {
-      if (!formData.value.name || !formData.value.email || !formData.value.message) {
-        alert('Please fill in all fields');
-        return;
-      }
-
-      console.log('Form submitted successfully!', formData.value);
-      alert('Form submitted successfully!' + '\nName: ' + formData.value.name + '\nEmail: ' + formData.value.email + '\nMessage: ' + formData.value.message);
-      formData.value.name = '';
-      formData.value.email = '';
-      formData.value.message = '';
-    };
-
+  data() {
     return {
-      formData,
-      handleSubmit
+      formData: {
+        name: '',
+        email: '',
+        message: ''
+      }
     };
+  },
+  methods: {
+    handleSubmit() {
+      const email = 'support@aranjannson.com';
+      const subject = encodeURIComponent("Contact Form Submission (www.aranjannson.com/contact)");
+      const body = encodeURIComponent(`Name: ${this.formData.name}\nEmail: ${this.formData.email}\nMessage: ${this.formData.message}`);
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    }
   }
 };
 </script>
 
 <style scoped>
+
 .contact-form {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #000000;
   border-radius: 5px;
-  background-color: #2c2c54;
+
 
 }
 
