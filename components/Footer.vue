@@ -33,9 +33,11 @@
           </ul>
         </div>
         <div class="footer-section">
-          <h3>{{ $t('poweredBy') }}</h3>
+          <h3>{{ $t('language') }}</h3>
           <ul>
-            <li><NuxtLink href="" target="_blank" rel="noopener noreferrer" >TwentyDimension</NuxtLink></li>
+            <li><NuxtLink :to="switchLocalePath('en')">English</NuxtLink></li>
+            <li><NuxtLink :to="switchLocalePath('tr')">Türkçe</NuxtLink></li>
+            <li><NuxtLink :to="switchLocalePath('el')">Ελληνικά</NuxtLink></li>
           </ul>
         </div>
       </div>
@@ -58,6 +60,7 @@ definePageMeta({
 
 const currentYear = ref(new Date().getFullYear());
 const localePath = useLocalePath();
+const switchLocalePath = useSwitchLocalePath();
 </script>
 
 <style scoped>

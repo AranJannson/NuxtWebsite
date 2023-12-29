@@ -1,12 +1,13 @@
 <template>
   <div class="header">
     <div class="text-black position-absolute top-0 p-4" style="z-index: 99; right: 0;">
-      <select @change="changeLocale" class="bg-white border border-gray-300 text-gray-700 rounded focus:outline-none focus:border-blue-500">
-        <option value="en">en</option>
-        <option value="tr">tr</option>
-        <option value="el">el</option>
-      </select>
-    </div>
+    <!-- Dropdown for language selection -->
+    <select v-model="selectedLocale" @change="changeLanguage" class="bg-white border border-gray-300 text-gray-700 rounded focus:outline-none focus:border-blue-500">
+      <option value="en">English</option>
+      <option value="tr">Türkçe</option>
+      <option value="el">Ελληνικά</option>
+    </select>
+  </div>
 
     <div class="slanted"></div>
     <div class="header-content">
@@ -46,13 +47,23 @@ definePageMeta({
 
 <script>
 export default {
+  computed: {
+    // Computed property to get the current locale
+    selectedLocale: {
+      get() {
+        return this.$i18n.locale;
+      },
+      // No need to set as the changeLanguage method handles the update
+      set() {}
+    }
+  },
   methods: {
-    changeLocale(event) {
-      const newLocale = event.target.value;
-      this.$router.push(this.switchLocalePath(newLocale));
+    changeLanguage(event) {
+      const selectedLocale = event.target.value;
+      this.$router.push(this.switchLocalePath(selectedLocale));
     }
   }
-}
+};
 </script>
 
 <style>
