@@ -43,7 +43,7 @@ export default {
 
 definePageMeta({
   title: 'Home',
-  description: 'Aran Jannson\'s Portfolio Website Home Page',
+  description: 'Welcome to Aran Jannson\'s Portfolio: Dive into a curated selection of my most impactful projects, browse my expertise in various programming languages and frameworks, and get to know more about me. Connect with me through links to my GitHub and LinkedIn for a deeper insight into my professional journey.',
   image: '/thumbnails/home.jpg',
 })
 </script>

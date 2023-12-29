@@ -63,15 +63,32 @@
   "emailIsRequired": "E-posta gerekli",
   "messageIsRequired": "Mesaj gerekli",
   "githubLink": "GitHub Bağlantısı",
-  "privacyPolicyPart1": "Aran Jannson'un portföy sitesini ziyaret ettiğiniz için teşekkür ederiz. Bu web sitesi, yalnızca bilgilendirme amaçlı dış sitelere bağlantılar içerir. Ziyaretçilerden herhangi bir kişisel bilgi toplamıyoruz.",
-  "privacyPolicyPart2": "Lütfen dikkate alınız ki, bir dış bağlantıya tıkladığınızda, o siteye yönlendirileceksiniz. Bu web sitelerinin gizlilik politikalarını gözden geçirmenizi öneririz, çünkü bunlar bizimkilerden farklı olabilir. Bu dış sitelerin içeriğinden veya gizlilik uygulamalarından hiçbir sorumluluk kabul etmiyoruz.",
-  "privacyPolicyPart3": "Sitemizi gezinirken hiçbir kişisel bilgi toplanmamakta veya saklanmamaktadır. Herhangi bir bilgi toplamak için çerezleri veya takip teknolojilerini kullanmıyoruz.",
-  "privacyPolicyPart4": "Gizliliğiniz bizim için önemlidir ve biz, bizimle paylaşmayı tercih ettiğiniz herhangi bir bilginin gizliliğini korumaya kendimizi adamış durumdayız. Bu gizlilik beyanı ile ilgili herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin.",
   "previous": "Önceki",
   "projectJavaForBeginnersDescription": "Java'da temel kavramları öğrenmek için bir görev listesi",
   "projectSurreyCompSocWebappDescription": "Surrey Üniversitesi Bilişim Topluluğu'nun Web Ustası olarak, topluluk için yeni bir web uygulaması oluşturma görevi aldım.",
   "projectPortfolioWebsiteDescription": "Bu web sitesi için GitHub deposu",
   "projectJavaForBeginnersName": "Başlangıç Seviyesi İçin Java",
   "projectSurreyCompSocWebappName": "Surrey CompSoc Web Uygulaması",
-  "projectPortfolioWebsiteName": "Portföy Web Sitesi"
+  "projectPortfolioWebsiteName": "Portföy Web Sitesi",
+
+  "privacyPolicyDesc": {
+    "title": "Gizlilik Politikası",
+    "subtitle": "Aran Jannson'un Portföy Web Sitesine Hoş Geldiniz!",
+    "paragraph1": "Aran Jannson'un Portföy Web Sitesi'ni ziyaret ettiğiniz için teşekkür ederiz. Bu Gizlilik Politikası, ziyaretçilerimizden topladığımız bilgilerin nasıl ele alındığını açıklamaktadır. Web sitemiz, Aran Jannson'un portföyünü sergilemek için tasarlanmıştır ve daha fazla bilgi için dış web sitelerine bağlantılar içermektedir.",
+    "useOfCookies": "Çerezlerin Kullanımı",
+    "paragraph2": "1. Çerezler Nedir? Çerezler, standart internet günlük bilgilerini ve ziyaretçi davranışlarını toplamak için cihazınıza yerleştirilen küçük metin dosyalarıdır. Sitemizi iyileştirmemize ve daha iyi, daha kişiselleştirilmiş bir hizmet sunmamıza yardımcı olurlar.",
+    "paragraph3": "2. Çerezleri Nasıl Kullanıyoruz: Sitemizle nasıl etkileşimde bulunduğunuzu anlamak için çerezleri kullanıyoruz, bu da kullanıcı deneyiminizi geliştirmemize yardımcı olur. Çerezler, sitede ne kadar zaman geçirdiğiniz ve ziyaret ettiğiniz sayfalar gibi şeyleri takip edebilir.",
+    "paragraph4": "3. Çerezler Konusunda Tercihiniz: Çerezleri kabul etmeyi ya da reddetmeyi seçebilirsiniz. Çoğu web tarayıcısı otomatik olarak çerezleri kabul eder, ancak tercih ederseniz tarayıcı ayarlarınızı çerezleri reddedecek şekilde değiştirebilirsiniz. Unutmayın ki, çerezleri devre dışı bırakmak web sitemizdeki deneyiminizi sınırlayabilir.",
+    "externalLinks": "Dış Bağlantılar",
+    "paragraph5": "Web sitemiz, dış sitelere bağlantılar içermektedir. Lütfen bu diğer web sitelerini kontrol etmediğimizi ve bu Gizlilik Politikasının onlara uygulanmadığını unutmayın. Kişisel olarak tanımlanabilir bilgi toplayan herhangi bir başka siteye ait gizlilik beyanlarını okumanızı teşvik ederiz.",
+    "noPersonalInformationCollected": "Kişisel Bilgi Toplanmamaktadır",
+    "paragraph6": "Ziyaretçilerimizden kişisel bilgi toplamıyoruz. Web sitemiz tamamen bilgilendirici olup, kayıt ya da kişisel veri gönderimi gerektirmez.",
+    "security": "Güvenlik",
+    "paragraph7": "Bilgilerinizin güvenliğini sağlamaya kararlıyız. Kişisel bilgi toplamasak da, web sitemizi yetkisiz erişimden korumak ve güvence altına almak için önlemler alıyoruz.",
+    "policyUpdates": "Politika Güncellemeleri",
+    "paragraph8": "Bu Gizlilik Politikasını ara sıra güncelleyebiliriz. Ziyaretçilerimizi, herhangi bir değişiklik için bu sayfayı sık sık kontrol etmeye ve topladığımız kişisel bilgileri nasıl koruduğumuz konusunda bilgilendirilmeleri için teşvik ederiz.",
+    "contactUs": "Bizimle İletişime Geçin",
+    "paragraph9": "Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen https://www.aranjannson.com/contact aracılığıyla bizimle iletişime geçmekten çekinmeyin."
+  }
+
 }

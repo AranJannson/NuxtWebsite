@@ -2,7 +2,7 @@
 
 definePageMeta({
   title: 'Privacy Policy',
-  description: 'Aran Jannson\'s Portfolio Website Privacy Policy',
+  description: 'Read my commitment to your privacy on the Website. This Privacy Policy outlines how I handle and protect your information, ensuring transparency and trust in my digital interactions.',
   image: '/thumbnails/privacyPolicy.jpg',
 })
 
@@ -13,12 +13,39 @@ definePageMeta({
   <title>{{ $t('privacyPolicy') }} | AranJannson</title>
 
   <div class="privacy-policy">
-    <h2>{{ $t('privacyPolicy') }}</h2>
+    <h2>{{ $t('privacyPolicyDesc.title') }}</h2>
 
-    <p>{{ $t('privacyPolicyPart1') }}</p>
-    <p>{{ $t('privacyPolicyPart2') }}</p>
-    <p>{{ $t('privacyPolicyPart3') }}</p>
-    <p>{{ $t('privacyPolicyPart4') }}</p>
+    <h3>{{ $t('privacyPolicyDesc.subtitle') }}</h3>
+
+    <p>{{ $t('privacyPolicyDesc.paragraph1') }}</p>
+
+    <h3>{{ $t('privacyPolicyDesc.useOfCookies') }}</h3>
+
+    <p>{{ $t('privacyPolicyDesc.paragraph2') }}</p>
+    <p>{{ $t('privacyPolicyDesc.paragraph3') }}</p>
+    <p>{{ $t('privacyPolicyDesc.paragraph4') }}</p>
+
+    <h3>{{ $t('privacyPolicyDesc.externalLinks') }}</h3>
+
+    <p>{{ $t('privacyPolicyDesc.paragraph5') }}</p>
+
+    <h3>{{ $t('privacyPolicyDesc.noPersonalInformationCollected') }}</h3>
+
+    <p>{{ $t('privacyPolicyDesc.paragraph6') }}</p>
+
+    <h3>{{ $t('privacyPolicyDesc.security') }}</h3>
+
+    <p>{{ $t('privacyPolicyDesc.paragraph7') }}</p>
+
+    <h3>{{ $t('privacyPolicyDesc.policyUpdates') }}</h3>
+
+    <p>{{ $t('privacyPolicyDesc.paragraph8') }}</p>
+
+    <h3>{{ $t('privacyPolicyDesc.contactUs') }}</h3>
+
+    <p>{{ $t('privacyPolicyDesc.paragraph9') }}</p>
+
+
 
   </div>
 </template>
@@ -37,6 +64,13 @@ h1 {
   color: gainsboro;
   font-size: 28px;
   margin-bottom: 20px;
+}
+
+h3{
+  color: gainsboro;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 p {

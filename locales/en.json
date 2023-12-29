@@ -62,15 +62,31 @@
   "emailIsRequired": "Email is required",
   "messageIsRequired": "Message is required",
   "githubLink": "GitHub Link",
-  "privacyPolicyPart1": "Thank you for visiting Aran Jannson's portfolio site. This website contains links to external sites for informational purposes only. We do not collect any personal information from visitors.",
-  "privacyPolicyPart2": "Please note that once you click on an external link, you will be directed to that site. We encourage you to review the privacy policies of those websites as they may differ from ours. We hold no responsibility for the content or privacy practices of these external sites.",
-  "privacyPolicyPart3": "While browsing our site, no personal information is gathered or stored. We do not use cookies or tracking technologies to collect any information.",
-  "privacyPolicyPart4": "Your privacy is important to us, and we are committed to maintaining the confidentiality of any information you choose to share with us. If you have any questions about this privacy statement, please contact us.",
   "previous": "Previous",
   "projectJavaForBeginnersDescription": "A list of tasks in Java to learn the core concepts",
   "projectSurreyCompSocWebappDescription": "As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new web application for the society.",
   "projectPortfolioWebsiteDescription": "The github repository for this website",
   "projectJavaForBeginnersName": "Java For Beginners",
   "projectSurreyCompSocWebappName": "Surrey CompSoc Web Application",
-  "projectPortfolioWebsiteName": "Portfolio Website"
+  "projectPortfolioWebsiteName": "Portfolio Website",
+
+  "privacyPolicyDesc": {
+    "title": "Privacy Policy",
+    "subtitle": "Welcome to Aran Jannson's Portfolio Website!",
+    "paragraph1": "Thank you for visiting Aran Jannson's Portfolio Website. This Privacy Policy outlines how we handle information collected from our visitors. Our website is designed to showcase our portfolio and includes links to external websites for further information.",
+    "useOfCookies": "Use of Cookies",
+    "paragraph2": "1. What are Cookies? Cookies are small text files placed on your device to collect standard internet log information and visitor behavior. They help us improve our site and provide a better, more personalized service.",
+    "paragraph3": "2. How We Use Cookies: We use cookies to understand how you interact with our site, which helps us enhance your user experience. Cookies may track things like how long you spend on the site and the pages you visit.",
+    "paragraph4": "3. Your Choice Regarding Cookies: You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can modify your browser setting to decline cookies if you prefer. Note that disabling cookies may limit your experience on our website.",
+    "externalLinks": "External Links",
+    "paragraph5": "Our website contains links to external sites. Please be aware that we do not control these other websites, and this Privacy Policy does not apply to them. We encourage you to read the privacy statements of any other site that collects personally identifiable information.",
+    "noPersonalInformationCollected": "No Personal Information Collected",
+    "paragraph6": "We do not collect personal information from our visitors. Our website is purely informational, and no registration or personal data submission is required.",
+    "security": "Security",
+    "paragraph7": "We are committed to ensuring that your information is secure. While we do not collect personal information, we take precautions to secure our website and protect it from unauthorized access.",
+    "policyUpdates": "Policy Updates",
+    "paragraph8": "We may update this Privacy Policy occasionally. We encourage visitors to frequently check this page for any changes and to stay informed about how we are helping to protect the personal information we collect.",
+    "contactUs": "Contact Us",
+    "paragraph9": "If you have any questions about this Privacy Policy, please do not hesitate to contact us through https://www.aranjannson.com/contact ."
+  }
 }

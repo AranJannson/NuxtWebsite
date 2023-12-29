@@ -68,7 +68,7 @@ export default {
 
 definePageMeta({
   title: 'Socials',
-  description: 'Aran Jannson\'s Portfolio Website Socials Page',
+  description: 'Discover my social media presence on the Socials page of my portfolio. Here, you\'ll find direct links to connect with me on LinkedIn, GitHub, GitLab, and more. Follow along for my latest updates, professional insights, and interactive engagements across various platforms.',
   image: '/thumbnails/socials.jpg',
 })
 </script>

@@ -19,7 +19,7 @@ export default {
 
 definePageMeta({
   title: 'Contact',
-  description: 'Aran Jannson\'s Portfolio Website Contact Page',
+  description: 'Looking to connect? Visit the Contact page on my Portfolio Website. Here, you can to reach out to me, whether for professional collaborations, project inquiries, or just to say hello. I\'m always open to new opportunities and conversations!',
   image: '/thumbnails/contact.jpg',
 })
 </script>

@@ -2,7 +2,7 @@
 
 definePageMeta({
   title: 'Blog',
-  description: 'Aran Jannson\'s Portfolio Website Blog Page',
+  description: 'Welcome to my Blog! Dive into a world of thoughts, insights, and stories on my Portfolio Website. Here, I share my experiences, knowledge, and ideas on technology, projects, and professional growth. Join the conversation and explore my latest posts."',
   image: '/thumbnails/blog.jpg',
 })
 
