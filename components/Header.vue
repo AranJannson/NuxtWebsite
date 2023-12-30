@@ -72,12 +72,9 @@ export default {
   img{
 
     transition: transform 0.3s ease;
-    width: 75px;
+    width: 65px;
     margin:20px;
 
-    &:hover{
-      transform: scale(1.15);
-    }
   }
 
 }
@@ -91,6 +88,7 @@ export default {
 }
 
 .navBarList{
+  width: 20rem;
 
   li{
     margin: 0 10px;
