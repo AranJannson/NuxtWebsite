@@ -10,7 +10,7 @@ This is a portfolio web application designed to showcase my projects and more. B
 Ensure you have the following installed:
 - Node.js (minimum version 20.0.0)
 - Yarn (minimum version 4.0.0) or npm/pnpm
-- Nuxt 3.0 (installed via Yarn/npm/pnpm)
+- Nuxt 3.9 (installed via Yarn/npm/pnpm)
 - Tailwind CSS (minimum version 3.3.6)
 
 ### Installation
