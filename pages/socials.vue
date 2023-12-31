@@ -67,8 +67,8 @@ export default {
 };
 
 definePageMeta({
-  title: 'Socials',
-  description: 'Discover my social media presence on the Socials page of my portfolio. Here, you\'ll find direct links to connect with me on LinkedIn, GitHub, GitLab, and more. Follow along for my latest updates, professional insights, and interactive engagements across various platforms.',
+  title: 'socials',
+  description: 'socialsPageDescription',
   image: '/thumbnails/socials.jpg',
 })
 </script>

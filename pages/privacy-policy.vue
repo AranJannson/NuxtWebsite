@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
 definePageMeta({
-  title: 'Privacy Policy',
-  description: 'Read my commitment to your privacy on the Website. This Privacy Policy outlines how I handle and protect your information, ensuring transparency and trust in my digital interactions.',
+  title: 'privacyPolicy',
+  description: 'privacyPolicyPageDescription',
   image: '/thumbnails/privacyPolicy.jpg',
 })
 

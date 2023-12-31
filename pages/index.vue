@@ -21,11 +21,9 @@
   <div data-aos="fade-up" data-aos-delay="300">
     <SocialsIcons/>
   </div>
-
-
-
-
 </template>
+
+
 <script>
 import ProjectCarousel from '~/components/ProjectCarousel.vue';
 import SocialsIcons from "~/components/SocialsIcons.vue";
@@ -42,8 +40,8 @@ export default {
 };
 
 definePageMeta({
-  title: 'Home',
-  description: 'Welcome to Aran Jannson\'s Portfolio: Dive into a curated selection of my most impactful projects, browse my expertise in various programming languages and frameworks, and get to know more about me. Connect with me through links to my GitHub and LinkedIn for a deeper insight into my professional journey.',
+  title: 'home',
+  description: 'homePageDescription',
   image: '/thumbnails/home.jpg',
 })
 </script>

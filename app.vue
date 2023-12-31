@@ -21,11 +21,15 @@ import CookiesConsent from "~/components/CookiesConsent.vue";
 const route = useRoute();
 const { t } = useI18n();
 
+const title: ComputedRef<string> = computed(() => route.meta.title as string);
+const description: ComputedRef<string> = computed(() => route.meta.description as string);
+const image: ComputedRef<string> = computed(() => route.meta.image as string);
+
 
 useHead({
   meta: [
-    {property: 'og:title', content: `${route.meta.title} | AranJannson`},
-    { property: 'og:description', content: `${route.meta.description}` },
+    {property: 'og:title', content: `${t(title.value)} | AranJannson`},
+    { property: 'og:description', content: `${t(description.value)}` },
     { property: 'og:image', content: `${route.meta.image}` },
     { property: 'og:type', content: 'website' },
     {property: 'og:image:height', content: `1079`},
