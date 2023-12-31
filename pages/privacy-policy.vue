@@ -3,7 +3,7 @@
 definePageMeta({
   title: 'privacyPolicy',
   description: 'privacyPolicyPageDescription',
-  image: '/thumbnails/privacyPolicy.jpg',
+  image: 'privacyPolicyThumbnail',
 })
 
 </script>

@@ -69,7 +69,7 @@ export default {
 definePageMeta({
   title: 'socials',
   description: 'socialsPageDescription',
-  image: '/thumbnails/socials.jpg',
+  image: 'socialsThumbnail',
 })
 </script>
 

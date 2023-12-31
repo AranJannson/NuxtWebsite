@@ -96,6 +96,12 @@
   "privacyPolicyPageDescription": "Web Sitemde gizliliğinize olan bağlılığımı okuyun. Bu Gizlilik Politikası, bilgilerinizi nasıl ele aldığımı ve koruduğumu açıklar, dijital etkileşimlerimde şeffaflık ve güven sağlar.",
   "projectsPageDescription": "Çeşitli teknolojilerdeki ve yaratıcı çözümlerdeki uzmanlığımı sergileyen yenilikçi projelerim arasında gezinin. Bu sayfa, yazılım geliştirme ve tasarımdaki profesyonel yolculuğumu vurgular, işbirliği tutkumu ve teknik mükemmelliği yansıtır.",
   "socialsPageDescription": "Portföyümdeki Sosyal Medya sayfasında sosyal medya varlığımı keşfedin. Burada, LinkedIn, GitHub, GitLab ve daha fazlasında benimle bağlantı kurmak için doğrudan linkler bulacaksınız. En son güncellemelerim, profesyonel içgörülerim ve çeşitli platformlarda etkileşimli katılımlarım için beni takip edin.",
-  "blogPageDescription": "Bloguma Hoş Geldiniz! Portföy Web Sitemde teknoloji, projeler ve profesyonel büyüme hakkında düşünceler, içgörüler ve hikayeler dünyasına dalın. Deneyimlerimi, bilgimi ve fikirlerimi paylaşıyorum. Sohbete katılın ve en son gönderilerimi keşfedin."
+  "blogPageDescription": "Bloguma Hoş Geldiniz! Portföy Web Sitemde teknoloji, projeler ve profesyonel büyüme hakkında düşünceler, içgörüler ve hikayeler dünyasına dalın. Deneyimlerimi, bilgimi ve fikirlerimi paylaşıyorum. Sohbete katılın ve en son gönderilerimi keşfedin.",
+
+  "homeThumbnail" : "/thumbnails/home_tr.jpg",
+  "projectsThumbnail" : "/thumbnails/projects_tr.jpg",
+  "contactThumbnail" : "/thumbnails/contact_tr.jpg",
+  "privacyPolicyThumbnail" : "/thumbnails/privacyPolicy_tr.jpg",
+  "socialsThumbnail" : "/thumbnails/socials_tr.jpg"
 
 }

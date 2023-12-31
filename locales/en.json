@@ -89,12 +89,18 @@
     "contactUs": "Contact Us",
     "paragraph9": "If you have any questions about this Privacy Policy, please do not hesitate to contact us through https://www.aranjannson.com/contact ."
   },
-  
+
   "homePageDescription": "Welcome to Aran Jannson's Portfolio: Dive into a curated selection of my most impactful projects, browse my expertise in various programming languages and frameworks, and get to know more about me. Connect with me through links to my GitHub and LinkedIn for a deeper insight into my professional journey.",
   "contactPageDescription": "Looking to connect? Visit the Contact page on my Portfolio Website. Here, you can reach out to me, whether for professional collaborations, project inquiries, or just to say hello. I'm always open to new opportunities and conversations!",
   "privacyPolicyPageDescription": "Read my commitment to your privacy on the Website. This Privacy Policy outlines how I handle and protect your information, ensuring transparency and trust in my digital interactions.",
   "projectsPageDescription": "Explore a range of my innovative projects showcasing expertise in various technologies and creative solutions. This page highlights my professional journey in software development and design, reflecting my passion for collaboration and technical excellence.",
   "socialsPageDescription": "Discover my social media presence on the Socials page of my portfolio. Here, you'll find direct links to connect with me on LinkedIn, GitHub, GitLab, and more. Follow along for my latest updates, professional insights, and interactive engagements across various platforms.",
-  "blogPageDescription": "Welcome to my Blog! Dive into a world of thoughts, insights, and stories on my Portfolio Website. Here, I share my experiences, knowledge, and ideas on technology, projects, and professional growth. Join the conversation and explore my latest posts."
+  "blogPageDescription": "Welcome to my Blog! Dive into a world of thoughts, insights, and stories on my Portfolio Website. Here, I share my experiences, knowledge, and ideas on technology, projects, and professional growth. Join the conversation and explore my latest posts.",
+
+  "homeThumbnail" : "/thumbnails/home.jpg",
+  "projectsThumbnail" : "/thumbnails/projects.jpg",
+  "contactThumbnail" : "/thumbnails/contact.jpg",
+  "privacyPolicyThumbnail" : "/thumbnails/privacyPolicy.jpg",
+  "socialsThumbnail" : "/thumbnails/socials.jpg"
 
 }

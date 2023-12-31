@@ -42,7 +42,7 @@ export default {
 definePageMeta({
   title: 'home',
   description: 'homePageDescription',
-  image: '/thumbnails/home.jpg',
+  image: 'homeThumbnail',
 })
 </script>
 

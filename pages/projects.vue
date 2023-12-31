@@ -58,7 +58,7 @@ export default {
 definePageMeta({
   title: 'projects',
   description: 'projectsPageDescription',
-  image: '/thumbnails/projects.jpg',
+  image: 'projectsThumbnail',
 })
 </script>
 

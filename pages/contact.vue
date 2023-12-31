@@ -20,7 +20,7 @@ export default {
 definePageMeta({
   title: 'contact',
   description: 'contactPageDescription',
-  image: '/thumbnails/contact.jpg',
+  image: 'contactThumbnail',
 })
 </script>
 
