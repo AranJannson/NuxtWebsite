@@ -42,8 +42,7 @@
         </div>
       </div>
       <div class="footer-info">
-<!--        <p>Icons from <a href="https://material.io/resources/icons/?style=round" target="_blank" rel="noopener noreferrer" style="color: #a7acb1">Google</a> and <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer" style="color: #a7acb1">Icons8</a></p>-->
-        <p>{{ $t('copyright') }} {{ currentYear }} {{ $t('copyrightEnd') }}</p>
+        <p>{{ $t('copyright') }} {{ copyrightRange}} {{ $t('copyrightEnd') }}</p>
       </div>
     </footer>
   </div>
@@ -58,7 +57,14 @@ definePageMeta({
   description: 'Page Footer',
 });
 
+const developmentYear = 2023;
 const currentYear = ref(new Date().getFullYear());
+const copyrightRange = computed(() => {
+  return currentYear.value === developmentYear
+      ? `${developmentYear}`
+      : `${developmentYear} - ${currentYear.value}`;
+});
+
 const localePath = useLocalePath();
 const switchLocalePath = useSwitchLocalePath();
 </script>
