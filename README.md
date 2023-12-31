@@ -96,7 +96,7 @@ MIT License.
 Please be aware that only the **latest official version** of this project is supported.
 
 ### Version Information
-- **Current Supported Version**: 0.9.4
+- **Current Supported Version**: 0.9.5
 - Please ensure you are using this version for full support.
 
 ### Disclaimer
