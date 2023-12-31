@@ -37,7 +37,7 @@ useHead({
 
     // { property: 'og:url', content: `https://aranjannson.com/${route.path}` },
     { property: 'twitter:card', content: 'summary_large_image' },
-    { property: 'twitter:description', content: `${route.meta.description}` },
+    { property: 'twitter:description', content: `${t(description.value)}` },
     { property: 'twitter:image', content: `${route.meta.image}` },
     // { property: 'twitter:url', content: `https://aranjannson.com/${route.path}` },
     ]
