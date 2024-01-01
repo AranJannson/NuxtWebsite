@@ -18,7 +18,13 @@ Ensure you have the following installed:
 Clone the repository and navigate to the project directory:
 
 ```bash
+#HTTPS
 git clone https://github.com/AranJannson/PortfolioWebsite.git
+
+#SSH
+git clone git@github.com:AranJannson/PortfolioWebsite.git
+
+#Navigate to project directory
 cd PortfolioWebsite
 ```
 
