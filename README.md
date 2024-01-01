@@ -91,7 +91,10 @@ pnpm run start
 ```
 
 # License
-MIT License.
+MIT License. 
+
+See [LICENSE](LICENSE)
+
 
 ---
 
