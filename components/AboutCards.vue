@@ -85,8 +85,12 @@ definePageMeta({
     box-sizing: border-box;
   }
 
+
   img{
     border-radius: 10px;
+    width: 300px;
+    object-fit: cover;
+
   }
 
   &:hover{

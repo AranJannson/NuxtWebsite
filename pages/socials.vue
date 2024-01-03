@@ -2,58 +2,59 @@
 
   <title>{{ $t('socials') }} | AranJannson</title>
 
-  <div class="headerTitle" style="display: flex; justify-content: space-between;">
-    <div style="width: 50%;">
-      <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 80px;">Find Me On</h1>
-    </div>
+ <div class="socials-container">
+   <div class="socials-content">
+    <h2>
+      {{ $t('socials') }}
+    </h2>
+   </div>
+   <div class="socials-content">
+     <button @click="openLink('https://www.linkedin.com/in/aranjannson/')">
+       <div class="row">
+         <div class="col">
+           <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" class="social-img"/>
+         </div>
+         <div class="col">
+           <h3>LinkedIn</h3>
+         </div>
+       </div>
+     </button>
 
-    <div style="width: 50%; display: flex; flex-direction: column; justify-content: center;">
-      <button @click="openLink('https://www.linkedin.com/in/aranjannson/')" type="button" class="btn btn-dark social-button">
-        <div class="row">
-          <div class="col">
-            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" class="social-img"/>
-          </div>
-          <div class="col">
-            <h3>LinkedIn</h3>
-          </div>
-        </div>
-      </button>
+     <button @click="openLink('https://github.com/AranJannson')">
+       <div class="row">
+         <div class="col">
+           <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" class="social-img"/>
+         </div>
+         <div class="col">
+           <h3>GitHub</h3>
+         </div>
+       </div>
+     </button>
 
-      <button @click="openLink('https://github.com/AranJannson')" type="button" class="btn btn-dark social-button">
-        <div class="row">
-          <div class="col">
-            <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" class="social-img"/>
-          </div>
-          <div class="col">
-            <h3>GitHub</h3>
-          </div>
-        </div>
-      </button>
+     <button @click="openLink('https://gitlab.com/AranJannson')">
+       <div class="row">
+         <div class="col">
+           <img src="https://img.icons8.com/color/48/000000/gitlab.png" alt="GitLab" class="social-img"/>
+         </div>
+         <div class="col">
+           <h3>GitLab</h3>
+         </div>
+       </div>
+     </button>
 
-      <button @click="openLink('https://gitlab.com/AranJannson')" type="button" class="btn btn-dark social-button">
-        <div class="row">
-          <div class="col">
-            <img src="https://img.icons8.com/color/48/000000/gitlab.png" alt="GitLab" class="social-img"/>
-          </div>
-          <div class="col">
-            <h3>GitLab</h3>
-          </div>
-        </div>
-      </button>
+     <button @click="openLink('mailto:me@aranjannson.com')" >
+       <div class="row">
+         <div class="col">
+           <img src="https://aranjannson.com/Pictures/email_white_48dp.svg" alt="Email" class="social-img"/>
+         </div>
+         <div class="col">
+           <h3>Email</h3>
+         </div>
+       </div>
+     </button>
+   </div>
+ </div>
 
-      <button @click="openLink('mailto:me@aranjannson.com')" type="button" class="btn btn-dark social-button">
-        <div class="row">
-          <div class="col">
-            <img src="https://aranjannson.com/Pictures/email_white_48dp.svg" alt="Email" class="social-img"/>
-          </div>
-          <div class="col">
-            <h3>Email</h3>
-          </div>
-        </div>
-      </button>
-
-    </div>
-  </div>
 </template>
 
 <script>
@@ -74,34 +75,41 @@ definePageMeta({
 </script>
 
 <style>
-.social-button {
-  width: 60%;
-  border-radius: 10px;
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.socials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #292c31;
+  color: #f8f8f2;
+  padding: 1.5rem 3rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.social-button .row {
-  display: flex;
-}
-
-.social-button .col {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  &:hover {
+    background-color: #3a4052;
+  }
 }
 
 .social-img {
-  margin-bottom: 10px;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .social-button .row {
-    flex-direction: column;
-  }
+  margin-right: 10px;
 }
 </style>
