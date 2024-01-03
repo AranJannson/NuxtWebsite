@@ -101,6 +101,20 @@
   "projectsThumbnail" : "/thumbnails/projects.jpg",
   "contactThumbnail" : "/thumbnails/contact.jpg",
   "privacyPolicyThumbnail" : "/thumbnails/privacyPolicy.jpg",
-  "socialsThumbnail" : "/thumbnails/socials.jpg"
+  "socialsThumbnail" : "/thumbnails/socials.jpg",
+
+  "computerSociety" : "The Univeristy Of Surrey Computing Society",
+
+  "aboutInfo":{
+    "intro": "Hello! My name is Aran Jannson, and I'm currently in my second year studying Computer Science at the University of Surrey. I am a British Turkish Cypriot, having spent the majority of my life in Cyprus before relocating to the UK in 2022.",
+    "language_proficiency": "I am fluent in both English and Turkish, I am also currently learning basic Greek.",
+    "academic_interest": "My academic and professional passions lie primarily in the realms of web and app development. Additionally, I have a growing interest in the fields of artificial intelligence, which I find both challenging and exciting.",
+    "hobbies": "My hobbies include web development, app development, and karting. I am currently working on several projects, and you can find them on my website. Here's the link to my projects page",
+    "committee_role": "I am also an active committee member of the University of Surrey Computing Society. To learn more about our society and our activities, visit our website via this link: ",
+    "lab_helper_experience": "In 2023, I further enhanced my skills and contributed to the university community by being a lab helper for the Web and Database Systems module at the University of Surrey. This role enabled me to engage directly with students, aiding their understanding of complex web and database concepts.",
+    "contact_instruction_part1": "If you would like to contact me, you can do so by visiting my",
+    "contact_instruction_part2": " page"
+
+  }
 
 }

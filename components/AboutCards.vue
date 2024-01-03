@@ -6,18 +6,30 @@
         {{ $t('about') }}
       </h2>
 
-      <div class="pb-3">
-        <img src="https://picsum.photos/seed/picsum/1200/1000">
+      <div class="pb-3 flex justify-center items-center h-64">
+        <img src="https://media.licdn.com/dms/image/D4D03AQH77RcAmKWCvA/profile-displayphoto-shrink_400_400/0/1691746859489?e=1709769600&v=beta&t=N3RSAIgLuP-8Yd4339Zss53YycPzNQEWwCxUj0zOkLk">
       </div>
 
       <p>
-        Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-        Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+        {{ $t('aboutInfo.intro') }}
       </p>
       <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        {{ $t('aboutInfo.language_proficiency') }}
+      </p>
+      <p>
+        {{ $t('aboutInfo.academic_interest') }}
+      </p>
+      <p>
+        {{ $t('aboutInfo.hobbies') }} <NuxtLink class="gradient-text" :to="localePath('/projects')">{{ $t('projects') }}</NuxtLink>.
+      </p>
+      <p>
+        {{ $t('aboutInfo.committee_role') }} <NuxtLink class="gradient-text" href="https://www.surreycompsoc.org/" target="_blank" rel="noopener noreferrer">{{ $t('computerSociety') }}</NuxtLink>.
+      </p>
+      <p>
+        {{ $t('aboutInfo.lab_helper_experience') }}
+      </p>
+      <p>
+        {{ $t('aboutInfo.contact_instruction_part1') }} <NuxtLink class="gradient-text" :to="localePath('/contact')">{{ $t('contact') }}</NuxtLink> {{ $t('aboutInfo.contact_instruction_part2') }}.
       </p>
 
     </div>
@@ -33,6 +45,7 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
 
 definePageMeta({
   title: 'About Cards',

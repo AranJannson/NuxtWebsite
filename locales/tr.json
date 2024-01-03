@@ -102,6 +102,20 @@
   "projectsThumbnail" : "/thumbnails/projects_tr.jpg",
   "contactThumbnail" : "/thumbnails/contact_tr.jpg",
   "privacyPolicyThumbnail" : "/thumbnails/privacyPolicy_tr.jpg",
-  "socialsThumbnail" : "/thumbnails/socials_tr.jpg"
+  "socialsThumbnail" : "/thumbnails/socials_tr.jpg",
+
+  "computerSociety" : "Surrey Üniversitesi Bilgisayar Topluluğu",
+
+  "aboutInfo":{
+    "intro": "Merhaba! Benim adım Aran Jannson ve şu anda Surrey Üniversitesi'nde Bilgisayar Bilimi üzerine ikinci yılımdayım. Bir İngiliz Kıbrıslı Türk'üyüm, hayatımın çoğunu Kıbrıs'ta geçirdikten sonra 2022 yılında İngiltere'ye taşındım.",
+    "language_proficiency": "İngilizce ve Türkçe'yi akıcı bir şekilde konuşuyorum, ayrıca şu anda temel Yunanca öğreniyorum.",
+    "academic_interest": "Akademik ve profesyonel tutkularım esas olarak web ve uygulama geliştirmede yatmaktadır. Ayrıca, hem zorlayıcı hem de heyecan verici bulduğum yapay zeka alanlarına artan bir ilgi duyuyorum.",
+    "hobbies": "Web geliştirme, uygulama geliştirme ve karting benim hobilerim arasında yer alıyor. Şu anda birkaç projede çalışıyorum ve bunları web sitemde bulabilirsiniz. İşte projelerim sayfasının bağlantısı ",
+    "committee_role": "Surrey Üniversitesi Bilgisayar Topluluğu'nun da aktif bir komite üyesiyim. Topluluğumuz ve etkinliklerimiz hakkında daha fazla bilgi almak için bu bağlantı aracılığıyla web sitemizi ziyaret edin: ",
+    "lab_helper_experience": "2023 yılında, Surrey Üniversitesi'nde Web ve Veritabanı Sistemleri modülünde laboratuvar yardımcısı olarak becerilerimi daha da geliştirdim ve üniversite topluluğuna katkıda bulundum. Bu rol, öğrencilerle doğrudan etkileşimde bulunmama ve web ve veritabanı kavramlarını anlamalarına yardımcı olmama olanak tanıdı.",
+    "contact_instruction_part1": "Eğer benimle iletişime geçmek isterseniz, bunu yapmak için benim",
+    "contact_instruction_part2": " sayfamı ziyaret edin"
+
+  }
 
 }
