@@ -6,8 +6,8 @@
         {{ $t('about') }}
       </h2>
 
-      <div class="pb-3 flex justify-center items-center h-64">
-        <img src="https://media.licdn.com/dms/image/D4D03AQH77RcAmKWCvA/profile-displayphoto-shrink_400_400/0/1691746859489?e=1709769600&v=beta&t=N3RSAIgLuP-8Yd4339Zss53YycPzNQEWwCxUj0zOkLk">
+      <div class="pb-3 flex justify-center items-center h-64 w-100">
+        <img class="mx-auto" src="https://media.licdn.com/dms/image/D4D03AQH77RcAmKWCvA/profile-displayphoto-shrink_400_400/0/1691746859489?e=1709769600&v=beta&t=N3RSAIgLuP-8Yd4339Zss53YycPzNQEWwCxUj0zOkLk" alt="linkedInProfilePic">
       </div>
 
       <p>

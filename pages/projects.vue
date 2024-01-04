@@ -49,7 +49,21 @@ export default {
           imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
           language: 'Nuxt3',
           link: 'https://github.com/AranJannson/PortfolioWebsite'
-        }
+        },
+        {
+          name: 'projectSoftwareEngineeringCW',
+          description: 'projectSoftwareEngineeringCWDescription',
+          imageUrl: '/favicon.png',
+          language: 'Python',
+          link: ''
+        },
+        {
+          name: 'projectOperatingSystemsCW',
+          description: 'projectOperatingSystemsCWDescription',
+          imageUrl: '/favicon.png',
+          language: 'Python',
+          link: ''
+        },
       ]
     };
   }
