@@ -1,16 +1,21 @@
 <template>
   <div class="header">
-    <div class="text-black position-absolute top-0 p-4" style="z-index: 99; right: 0;">
-    <!-- Dropdown for language selection -->
-    <select v-model="selectedLocale" @change="changeLanguage" class="bg-white border border-gray-300 text-gray-700 rounded focus:outline-none focus:border-blue-500">
-      <option value="en">English</option>
-      <option value="tr">Türkçe</option>
-      <option value="el">Ελληνικά</option>
-    </select>
-  </div>
+
+    <div>
+      <UButton icon="i-heroicons-language" @click="isOpen = true" style="background-color: black; z-index: 99; right: 0;" class="text-white position-absolute top-0 p-2 m-2"/>
+      <UModal v-model="isOpen">
+        <div class="p-4 text-center w-100" style="background-color: rgba(0, 0, 0, 0.9);">
+          <h2>{{ $t('language') }}</h2>
+          <NuxtLink class="languageSelector" :to="switchLocalePath('en')" style="width:100%;" @click.native="isOpen = false">English</NuxtLink>
+          <NuxtLink class="languageSelector" :to="switchLocalePath('tr')" style="width:100%;" @click.native="isOpen = false">Türkçe</NuxtLink>
+          <NuxtLink class="languageSelector" :to="switchLocalePath('el')" style="width:100%;" @click.native="isOpen = false">Ελληνικά</NuxtLink>
+        </div>
+      </UModal>
+    </div>
 
     <div class="slanted"></div>
     <div class="header-content">
+
       <NuxtLink :to="localePath('/')" class="logo">
         <img src="~/assets/images/favicon.png" alt="Site Logo" class="mx-auto">
       </NuxtLink>
@@ -30,37 +35,23 @@
   </div>
 </template>
 
+<script>
+  const isOpen = ref(false)
+</script>
+
 <script setup>
 const { locale } = useI18n()
 const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
 
 definePageMeta({
   title: 'Header',
   description: 'Page Header',
-})
+});
 
 </script>
 
-<script>
-export default {
-  computed: {
-    // Computed property to get the current locale
-    selectedLocale: {
-      get() {
-        return this.$i18n.locale;
-      },
-      // No need to set as the changeLanguage method handles the update
-      set() {}
-    }
-  },
-  methods: {
-    changeLanguage(event) {
-      const selectedLocale = event.target.value;
-      this.$router.push(this.switchLocalePath(selectedLocale));
-    }
-  }
-};
-</script>
+
 
 <style>
 
@@ -87,6 +78,18 @@ export default {
 
 }
 
+
+.languageSelector {
+  color: white;
+  width: 50%;
+  display: block !important;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: gray;
+  }
+}
+
 .navBarList{
   width: 20rem;
 
@@ -108,5 +111,40 @@ export default {
       transform: scale(1.15);
     }
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 </style>

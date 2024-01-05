@@ -14,10 +14,11 @@
         </NuxtLink>
       </div>
       <div class="project-details">
-        <h2 class="project-name">{{ $t(project.name) }}</h2>
+        <NuxtLink :to="project.link">
+          <h2 class="project-name">{{ $t(project.name) }}</h2>
+        </NuxtLink>
         <p class="project-description">{{ $t(project.description) }}</p>
         <p>{{ $t('language') }}: {{ project.language }}</p>
-        <NuxtLink class="gradient-text" :href="project.link" target="_blank" rel="noopener noreferrer">{{ $t('githubLink') }}</NuxtLink>
       </div>
     </div>
   </div>
@@ -49,20 +50,6 @@ export default {
           imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
           language: 'Nuxt3',
           link: 'https://github.com/AranJannson/PortfolioWebsite'
-        },
-        {
-          name: 'projectSoftwareEngineeringCW',
-          description: 'projectSoftwareEngineeringCWDescription',
-          imageUrl: '/favicon.png',
-          language: 'Python',
-          link: ''
-        },
-        {
-          name: 'projectOperatingSystemsCW',
-          description: 'projectOperatingSystemsCWDescription',
-          imageUrl: '/favicon.png',
-          language: 'Python',
-          link: ''
         },
       ]
     };

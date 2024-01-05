@@ -4,6 +4,7 @@ export default {
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/content',
+    '@nuxt/ui',
   ],
 
   content: {
@@ -48,16 +49,16 @@ export default {
     meta: [
       {name: 'description', content: 'A portfolio website for Aran Jannson'},
       {property: 'og:type', content: 'website'},
-      {property: 'og:url', content: 'https://beta.aranjannson.com/'},
+      {property: 'og:url', content: 'https://aranjannson.com/'},
       {property: 'og:title', content: 'Aran Jannson Portfolio Site'},
       {property: 'og:description', content: 'A portfolio website for Aran Jannson'},
-      {property: 'og:image', content: 'https://beta.aranjannson.com/favicon.png'},
+      {property: 'og:image', content: 'https://aranjannson.com/favicon.png'},
 
       {name: 'twitter:card', content: 'summary'},
-      {name: 'twitter:url', content: 'https://beta.aranjannson.com/'},
+      {name: 'twitter:url', content: 'https://aranjannson.com/'},
       {name: 'twitter:title', content: 'Aran Jannson Portfolio Site'},
       {name: 'twitter:description', content: 'A portfolio website for Aran Jannson'},
-      {name: 'twitter:image', content: 'https://beta.aranjannson.com/favicon.png'}
+      {name: 'twitter:image', content: 'https://aranjannson.com/favicon.png'}
     ],
     link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
   }
