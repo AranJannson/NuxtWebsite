@@ -86,7 +86,7 @@ definePageMeta({
   transition: color 0.3s ease;
 
   &:hover {
-    color: gray;
+    color: rgb(128, 128, 128);
   }
 }
 
