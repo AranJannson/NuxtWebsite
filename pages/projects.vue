@@ -10,7 +10,7 @@
     >
       <div class="image-container">
         <NuxtLink :to="project.link">
-          <img :src="project.imageUrl" :alt="project.name" class="project-image" />
+          <img :src="project.imageUrl" :alt="$t(project.name)" class="project-image" />
         </NuxtLink>
       </div>
       <div class="project-details">
@@ -31,25 +31,60 @@ export default {
       currentIndex: null,
       projects: [
         {
-          name: 'projectJavaForBeginnersName',
-          description: 'projectJavaForBeginnersDescription',
+          name: 'projectJavaForBeginners.title',
+          description: 'projectJavaForBeginners.description',
           imageUrl: 'https://aranjannson.com/Pictures/javaForBeginners.png',
           language: 'Java',
           link: 'https://github.com/AranJannson/Java-For-Beginners',
         },
         {
-          name: 'projectSurreyCompSocWebappName',
-          description: 'projectSurreyCompSocWebappDescription',
+          name: 'projectSurreyCompSocWebapp.title',
+          description: 'projectSurreyCompSocWebapp.description',
           imageUrl: 'https://aranjannson.com/Pictures/compsoc_logo_color_transparent.png',
           language: 'Nuxt2',
           link: 'https://github.com/surreycompsoc/website',
         },
         {
-          name: 'projectPortfolioWebsiteName',
-          description: 'projectPortfolioWebsiteDescription',
+          name: 'projectPortfolioWebsite.title',
+          description: 'projectPortfolioWebsite.description',
           imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
           language: 'Nuxt3',
           link: 'https://github.com/AranJannson/PortfolioWebsite'
+        },
+        {
+          name: 'projectDjangoCom2025.title',
+          description: 'projectDjangoCom2025.description',
+          imageUrl: 'https://aranjannson.com/Pictures/University_of_Surrey_Icon_Logo_White.png',
+          language: 'Django',
+          link: 'https://catalogue.surrey.ac.uk/2023-4/module/COM2025'
+        },
+        {
+          name: 'projectOperatingSystemsCOM1032.title',
+          description: 'projectOperatingSystemsCOM1032.description',
+          imageUrl: 'https://aranjannson.com/Pictures/University_of_Surrey_Icon_Logo_White.png',
+          language: 'Java',
+          link: 'https://catalogue.surrey.ac.uk/2022-3/module/COM1032'
+        },
+        {
+          name: 'projectSoftwareEngineeringCOM1028.title',
+          description: 'projectSoftwareEngineeringCOM1028.description',
+          imageUrl: 'https://aranjannson.com/Pictures/University_of_Surrey_Icon_Logo_White.png',
+          language: 'Java',
+          link: 'https://catalogue.surrey.ac.uk/2022-3/module/COM1028'
+        },
+        {
+          name: 'projectComputerLogicCOM1031.title',
+          description: 'projectComputerLogicCOM1031.description',
+          imageUrl: 'https://aranjannson.com/Pictures/University_of_Surrey_Icon_Logo_White.png',
+          language: 'ARM-32bit Assembly',
+          link: 'https://catalogue.surrey.ac.uk/2022-3/module/COM1031'
+        },
+        {
+          name: 'projectWebDatabaseCOM1025.title',
+          description: 'projectWebDatabaseCOM1025.description',
+          imageUrl: 'https://aranjannson.com/Pictures/University_of_Surrey_Icon_Logo_White.png',
+          language: 'My-SQL, PHP, HTML, CSS, JavaScript',
+          link: 'https://catalogue.surrey.ac.uk/2022-3/module/COM1025'
         },
       ]
     };

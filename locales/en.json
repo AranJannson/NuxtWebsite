@@ -63,12 +63,41 @@
   "messageIsRequired": "Message is required",
   "githubLink": "GitHub Link",
   "previous": "Previous",
-  "projectJavaForBeginnersDescription": "A list of tasks in Java to learn the core concepts",
-  "projectSurreyCompSocWebappDescription": "As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new web application for the society.",
-  "projectPortfolioWebsiteDescription": "The github repository for this website",
-  "projectJavaForBeginnersName": "Java For Beginners",
-  "projectSurreyCompSocWebappName": "Surrey CompSoc Web Application",
-  "projectPortfolioWebsiteName": "Portfolio Website",
+
+
+  "projectDjangoCom2025": {
+    "title": "Django Coursework",
+    "description": "This Django project for the COM2025 module is a website designed for a music distribution platform."
+  },
+  "projectOperatingSystemsCOM1032": {
+    "title": "Operating Systems Coursework",
+    "description": "This Java project for the COM1032 module simulates how memory is allocated and deallocated in computer systems."
+  },
+  "projectSoftwareEngineeringCOM1028": {
+    "title": "Software Engineering Coursework",
+    "description": "In this Java-based project for the COM1028 module, Java is utilized to access and query a SQLite database."
+  },
+  "projectComputerLogicCOM1031": {
+    "title": "Computer Logic Coursework",
+    "description": "This ARM-32bit Assembly language project for the COM1031 module is a Morse code translator. It displays the inputted letter on a 7-segment display and in the terminal, using a button for input."
+  },
+  "projectWebDatabaseCOM1025": {
+    "title": "Web and Database Systems Coursework",
+    "description": "Designed for the COM1025 module, this web project features a simple database backend, accessed through PHP."
+  },
+  "projectJavaForBeginners": {
+    "title": "Java For Beginners",
+    "description": "A list of tasks in Java to learn the core concepts."
+  },
+  "projectSurreyCompSocWebapp": {
+    "title": "Surrey CompSoc Web Application",
+    "description": "As the Web Master for the University Of Surrey Computing Society, I have been tasked with creating a new web application for the society."
+  },
+  "projectPortfolioWebsite": {
+    "title": "Portfolio Website",
+    "description": "The github repository for this website."
+  },
+
 
   "privacyPolicyDesc": {
     "title": "Privacy Policy",

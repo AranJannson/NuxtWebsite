@@ -64,12 +64,40 @@
   "messageIsRequired": "Mesaj gerekli",
   "githubLink": "GitHub Bağlantısı",
   "previous": "Önceki",
-  "projectJavaForBeginnersDescription": "Java'da temel kavramları öğrenmek için bir görev listesi",
-  "projectSurreyCompSocWebappDescription": "Surrey Üniversitesi Bilişim Topluluğu'nun Web Ustası olarak, topluluk için yeni bir web uygulaması oluşturma görevi aldım.",
-  "projectPortfolioWebsiteDescription": "Bu web sitesi için GitHub deposu",
-  "projectJavaForBeginnersName": "Başlangıç Seviyesi İçin Java",
-  "projectSurreyCompSocWebappName": "Surrey CompSoc Web Uygulaması",
-  "projectPortfolioWebsiteName": "Portföy Web Sitesi",
+
+  "projectDjangoCom2025": {
+    "title": "Django Ders Çalışması",
+    "description": "COM2025 modülü için bu Django projesi, bir müzik dağıtım platformu için tasarlanmış bir web sitesidir."
+  },
+  "projectOperatingSystemsCOM1032": {
+    "title": "İşletim Sistemleri Ders Çalışması",
+    "description": "COM1032 modülü için bu Java projesi, bilgisayar sistemlerinde belleğin nasıl tahsis edilip geri alındığını simüle eder."
+  },
+  "projectSoftwareEngineeringCOM1028": {
+    "title": "Yazılım Mühendisliği Ders Çalışması",
+    "description": "COM1028 modülü için bu Java tabanlı projede, SQLite veritabanına erişmek ve sorgulamak için Java kullanılmaktadır."
+  },
+  "projectComputerLogicCOM1031": {
+    "title": "Bilgisayar Mantığı Ders Çalışması",
+    "description": "COM1031 modülü için bu ARM-32bit Assembly dilindeki proje, bir Morse kodu çevirmenidir. Giriş yapılan harfi, bir düğme kullanarak 7 segmentli bir ekranda ve terminalde gösterir."
+  },
+  "projectWebDatabaseCOM1025": {
+    "title": "Web ve Veritabanı Sistemleri Ders Çalışması",
+    "description": "COM1025 modülü için tasarlanmış bu web projesi, PHP aracılığıyla erişilen basit bir veritabanı arka ucu özelliğine sahiptir."
+  },
+  "projectJavaForBeginners": {
+    "title": "Java Başlangıç Kursu",
+    "description": "Temel kavramları öğrenmek için Java'da yapılacak görevler listesi."
+  },
+  "projectSurreyCompSocWebapp": {
+    "title": "Surrey CompSoc Web Uygulaması",
+    "description": "Surrey Üniversitesi Bilgisayar Topluluğu'nun Web Yöneticisi olarak, topluluk için yeni bir web uygulaması oluşturma görevi aldım."
+  },
+  "projectPortfolioWebsite": {
+    "title": "Portföy Web Sitesi",
+    "description": "Bu web sitesi için github deposu."
+  },
+
 
   "privacyPolicyDesc": {
     "title": "Gizlilik Politikası",

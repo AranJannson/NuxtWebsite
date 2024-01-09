@@ -41,22 +41,22 @@ definePageMeta({
 
 const originalProjects = [
   {
-    name: 'projectJavaForBeginnersName',
-    description: 'projectJavaForBeginnersDescription',
+    name: 'projectJavaForBeginners.title',
+    description: 'projectJavaForBeginners.title',
     imageUrl: 'https://aranjannson.com/Pictures/javaForBeginners.png',
     language: 'Java',
     link: 'https://github.com/AranJannson/Java-For-Beginners',
   },
   {
-    name: 'projectSurreyCompSocWebappName',
-    description: 'projectSurreyCompSocWebappDescription',
+    name: 'projectSurreyCompSocWebapp.title',
+    description: 'projectSurreyCompSocWebapp.description',
     imageUrl: 'https://aranjannson.com/Pictures/compsoc_logo_color_transparent.png',
     language: 'Nuxt2',
     link: 'https://github.com/surreycompsoc/website',
   },
   {
-    name: 'projectPortfolioWebsiteName',
-    description: 'projectPortfolioWebsiteDescription',
+    name: 'projectPortfolioWebsite.title',
+    description: 'projectPortfolioWebsite.description',
     imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
     language: 'Nuxt3',
     link: 'https://github.com/AranJannson/PortfolioWebsite'

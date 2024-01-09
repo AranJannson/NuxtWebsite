@@ -64,12 +64,39 @@
   "messageIsRequired": "Το μήνυμα απαιτείται",
   "githubLink": "Σύνδεσμος GitHub",
   "previous": "Προηγούμενος",
-  "projectJavaForBeginnersDescription": "Μια λίστα με εργασίες στη Java για να μάθετε τις βασικές έννοιες",
-  "projectSurreyCompSocWebappDescription": "Ως ο Web Master για την Εταιρεία Υπολογιστών του Πανεπιστημίου του Surrey, έχω αναλάβει τη δημιουργία μιας νέας εφαρμογής ιστού για την εταιρεία.",
-  "projectPortfolioWebsiteDescription": "Το αποθετήριο GitHub για αυτόν τον ιστότοπο",
-  "projectJavaForBeginnersName": "Java Για Αρχάριους",
-  "projectSurreyCompSocWebappName": "Ιστοσελίδα Web της Surrey CompSoc",
-  "projectPortfolioWebsiteName": "Ιστοσελίδα Χαρτοφυλακίου",
+
+  "projectDjangoCom2025": {
+    "title": "Εργασία Django",
+    "description": "Αυτό το Django project για το μάθημα COM2025 είναι ένας ιστότοπος σχεδιασμένος για μια πλατφόρμα διανομής μουσικής."
+  },
+  "projectOperatingSystemsCOM1032": {
+    "title": "Εργασία Λειτουργικών Συστημάτων",
+    "description": "Αυτό το Java project για το μάθημα COM1032 προσομοιώνει πώς ανατίθεται και αποδεσμεύεται η μνήμη στα υπολογιστικά συστήματα."
+  },
+  "projectSoftwareEngineeringCOM1028": {
+    "title": "Εργασία Μηχανικής Λογισμικού",
+    "description": "Σε αυτό το Java-based project για το μάθημα COM1028, χρησιμοποιείται Java για πρόσβαση και ερωτήματα σε μια βάση δεδομένων SQLite."
+  },
+  "projectComputerLogicCOM1031": {
+    "title": "Εργασία Υπολογιστικής Λογικής",
+    "description": "Αυτό το project σε γλώσσα ARM-32bit Assembly για το μάθημα COM1031 είναι ένας μεταφραστής κώδικα Morse. Εμφανίζει το γράμμα που εισάγεται σε μια οθόνη 7 τμημάτων και στο τερματικό, χρησιμοποιώντας ένα κουμπί για την εισαγωγή."
+  },
+  "projectWebDatabaseCOM1025": {
+    "title": "Εργασία Web και Συστημάτων Βάσεων Δεδομένων",
+    "description": "Σχεδιασμένο για το μάθημα COM1025, αυτό το web project διαθέτει ένα απλό backend βάσης δεδομένων, που προσπελάστηκε μέσω PHP."
+  },
+  "projectJavaForBeginners": {
+    "title": "Java για Αρχάριους",
+    "description": "Μια λίστα με εργασίες σε Java για να μάθετε τις βασικές έννοιες."
+  },
+  "projectSurreyCompSocWebapp": {
+    "title": "Web Εφαρμογή Surrey CompSoc",
+    "description": "Ως ο Web Master για την Κοινωνία Υπολογιστών του Πανεπιστημίου του Surrey, έχω αναλάβει τη δημιουργία μιας νέας web εφαρμογής για την κοινωνία."
+  },
+  "projectPortfolioWebsite": {
+    "title": "Ιστοσελίδα Πορτφόλιο",
+    "description": "Το αποθετήριο στο github για αυτήν την ιστοσελίδα."
+  },
 
   "privacyPolicyDesc": {
     "title": "Πολιτική Απορρήτου",
