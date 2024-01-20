@@ -17,7 +17,7 @@
     <div class="header-content">
 
       <NuxtLink :to="localePath('/')" class="logo">
-        <img src="~/assets/images/favicon.png" alt="Site Logo" class="mx-auto">
+        <img src="~/assets/images/favicon.svg" alt="Site Logo" class="mx-auto">
       </NuxtLink>
 
       <ul class="navBarList" >

@@ -4,6 +4,10 @@
 @import 'tailwindcss/utilities';
 
 
+$background-color: linear-gradient(45deg, #4B0082, #483D8B, #000080);
+$ui-color: #2c2c54;
+
+
 $defaultFontStack: "DM Sans",-apple-system,blinkmacsystemfont,"Segoe UI",roboto,oxygen-sans,ubuntu,cantarell,"Helvetica Neue",helvetica,arial,sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 html, body, input, * {
   font-family: $defaultFontStack;
@@ -97,7 +101,8 @@ body {
   //background-image: linear-gradient(to bottom, rgb(2, 31, 75) , rgb(7, 97, 166), rgb(26, 125, 212));
   //background: linear-gradient(to bottom right, #1E90FF, #127c4e);
   //background: linear-gradient(45deg, #800000, #FF6347, #8B0000);
-  background: linear-gradient(45deg, #4B0082, #483D8B, #000080);
+
+  background: $background-color;
 
   //background: linear-gradient(45deg, #6ad3d6, #a0e0e3, #7bc7cc);
 
