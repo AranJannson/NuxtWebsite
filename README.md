@@ -3,7 +3,7 @@
 
 ### Description
 
-This is a portfolio web application designed to showcase my projects and more. Built with Nuxt 3 and Tailwind CSS, it offers a modern and responsive user interface.
+This is a portfolio web application designed to showcase my projects and more. Built with Nuxt 3 and Tailwind CSS, it offers a modern and responsive user interface. 
 
 ### Prerequisites
 
