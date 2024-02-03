@@ -57,7 +57,7 @@ const originalProjects = [
   {
     name: 'projectPortfolioWebsite.title',
     description: 'projectPortfolioWebsite.description',
-    imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
+    imageUrl: 'https://aranjannson.com/favicon.svg',
     language: 'Nuxt3',
     link: 'https://github.com/AranJannson/PortfolioWebsite'
   },
