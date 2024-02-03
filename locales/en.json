@@ -66,8 +66,16 @@
 
 
   "projectDjangoCom2025": {
-    "title": "Django Coursework",
+    "title": " Web Applications Development Coursework",
     "description": "This Django project for the COM2025 module is a website designed for a music distribution platform."
+  },
+  "projectComputerSecurityA_1": {
+    "title": "Computer Security Coursework 1",
+    "description": "This coursework for the COM2041 module is concentrated primarily on the practical applications of cryptography, including advanced encryption standards like AES, data encryption standards like DES, secure hashing algorithms like SHA, and public-key cryptographic systems like RSA."
+  },
+  "projectComputerSecurityA_2": {
+    "title": "Computer Security Coursework 2",
+    "description": "This second coursework for the COM2041 module is focused primarily on security protocols, including the assessment of vulnerabilities to man-in-the-middle attacks by potential attackers, such as Alice and Bob. It encompasses methods for hashing, encryption, and the application of MAC (Message Authentication Code) addresses to safeguard data during transmission between users utilizing the Scyther software."
   },
   "projectOperatingSystemsCOM1032": {
     "title": "Operating Systems Coursework",
@@ -96,6 +104,10 @@
   "projectPortfolioWebsite": {
     "title": "Portfolio Website",
     "description": "The github repository for this website."
+  },
+  "projectElectronPenNT": {
+    "title": "PenNT",
+    "description": "Capture, organize, and access your thoughts effortlessly with a simple, powerful note-taking application that offers intuitive design and multimedia support, ensuring your ideas are synchronized across devices."
   },
 
 

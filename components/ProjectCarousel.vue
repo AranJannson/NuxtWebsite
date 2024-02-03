@@ -60,6 +60,13 @@ const originalProjects = [
     imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
     language: 'Nuxt3',
     link: 'https://github.com/AranJannson/PortfolioWebsite'
+  },
+  {
+    name: 'projectElectronPenNT.title',
+    description: 'projectElectronPenNT.description',
+    imageUrl: 'https://aranjannson.com/Pictures/logo_PenNT.png',
+    language: 'Electron, Next.js',
+    link: ''
   }
 ];
 

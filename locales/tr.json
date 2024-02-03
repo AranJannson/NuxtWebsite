@@ -66,8 +66,15 @@
   "previous": "Önceki",
 
   "projectDjangoCom2025": {
-    "title": "Django Ders Çalışması",
+    "title": "Web Uygulamaları Geliştirme Çalışması",
     "description": "COM2025 modülü için bu Django projesi, bir müzik dağıtım platformu için tasarlanmış bir web sitesidir."
+  },
+  "projectComputerSecurityA_1": {
+    "title": "Bilgisayar Güvenliği Çalışması 1",
+    "description": "Bu COM2041 modülü için yapılan ders çalışması, AES gibi ileri şifreleme standartları, DES gibi veri şifreleme standartları, SHA gibi güvenli karma algoritmaları ve RSA gibi açık anahtarlı kriptografik sistemler dahil olmak üzere, kriptografinin pratik uygulamalarına öncelikle odaklanmıştır."  },
+  "projectComputerSecurityA_2": {
+    "title": "Bilgisayar Güvenliği Çalışması 2",
+    "description": "Bu ikinci COM2041 modülü ders çalışması, Alice ve Bob gibi olası saldırganlar tarafından ortadaki adam saldırılarına karşı savunmasızlıkların değerlendirilmesi dahil olmak üzere güvenlik protokollerine öncelikle odaklanmaktadır. Bu, kullanıcılar arasında veri iletimi sırasında verileri korumak için karma, şifreleme ve MAC (Mesaj Doğrulama Kodu) adreslerinin uygulanması yöntemlerini kapsar ve Scyther yazılımını kullanan kullanıcılar için tasarlanmıştır."
   },
   "projectOperatingSystemsCOM1032": {
     "title": "İşletim Sistemleri Ders Çalışması",
@@ -97,6 +104,11 @@
     "title": "Portföy Web Sitesi",
     "description": "Bu web sitesi için github deposu."
   },
+  "projectElectronPenNT": {
+    "title": "PenNT",
+    "description": "Düşüncelerinizi cihazlar arası senkronize şekilde, sezgisel tasarım ve çoklu medya desteği sunan basit, güçlü bir not alma uygulaması ile sorunsuz bir şekilde yakalayın, düzenleyin ve erişin."
+  },
+
 
 
   "privacyPolicyDesc": {

@@ -47,9 +47,16 @@ export default {
         {
           name: 'projectPortfolioWebsite.title',
           description: 'projectPortfolioWebsite.description',
-          imageUrl: 'https://nuxtjs.ir/logos/nuxt-white.svg',
+          imageUrl: 'https://aranjannson.com/favicon.svg',
           language: 'Nuxt3',
           link: 'https://github.com/AranJannson/PortfolioWebsite'
+        },
+        {
+          name: 'projectElectronPenNT.title',
+          description: 'projectElectronPenNT.description',
+          imageUrl: 'https://aranjannson.com/Pictures/logo_PenNT.png',
+          language: 'Electron, Next.js',
+          link: ''
         },
         {
           name: 'projectDjangoCom2025.title',
@@ -57,6 +64,20 @@ export default {
           imageUrl: 'https://aranjannson.com/Pictures/University_of_Surrey_Icon_Logo_White.png',
           language: 'Django',
           link: 'https://catalogue.surrey.ac.uk/2023-4/module/COM2025'
+        },
+        {
+          name: 'projectComputerSecurityA_1.title',
+          description: 'projectComputerSecurityA_1.description',
+          imageUrl: 'https://aranjannson.com/Pictures/University_of_Surrey_Icon_Logo_White.png',
+          language: 'Java, CryptTool, C++',
+          link: 'https://catalogue.surrey.ac.uk/2023-4/module/COM2041'
+        },
+        {
+          name: 'projectComputerSecurityA_2.title',
+          description: 'projectComputerSecurityA_2.description',
+          imageUrl: 'https://aranjannson.com/Pictures/University_of_Surrey_Icon_Logo_White.png',
+          language: 'Scyther',
+          link: 'https://catalogue.surrey.ac.uk/2023-4/module/COM2041'
         },
         {
           name: 'projectOperatingSystemsCOM1032.title',
