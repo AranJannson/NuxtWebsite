@@ -14,6 +14,7 @@
           <a :href="project.link">
             <img :src="project.imageUrl" alt="Project Image">
           </a>
+
           <div>
             <p>{{ $t('language') }}: </p>
             <p :class="`${project.language.toLowerCase()}-text`">{{ project.language }}</p>
