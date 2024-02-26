@@ -12,6 +12,7 @@
       <span class="skill-tag">HTML</span>
       <span class="skill-tag">Java</span>
       <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">Typescript</span>
       <span class="skill-tag">Python</span>
       <span class="skill-tag">SCSS</span>
 
@@ -22,9 +23,12 @@
       <span class="skill-tag">Nuxt 3.0</span>
       <span class="skill-tag">TailwindCSS</span>
       <span class="skill-tag">Vue.js</span>
+      <span class="skill-tag">React</span>
+      <span class="skill-tag">Next.js</span>
 
       <!-- Databases -->
       <span class="skill-tag">Firebase</span>
+      <span class="skill-tag">Supabase</span>
       <span class="skill-tag">MySQL</span>
       <span class="skill-tag">SQLite</span>
 
