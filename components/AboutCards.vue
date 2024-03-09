@@ -9,7 +9,7 @@
       <br>
 
       <div class="pb-3 flex justify-center items-center h-64 w-100">
-        <img class="mx-auto" src="https://media.licdn.com/dms/image/D4D03AQH77RcAmKWCvA/profile-displayphoto-shrink_400_400/0/1691746859489?e=1709769600&v=beta&t=N3RSAIgLuP-8Yd4339Zss53YycPzNQEWwCxUj0zOkLk" alt="linkedInProfilePic">
+        <img class="mx-auto" src="https://media.licdn.com/dms/image/D4D03AQH77RcAmKWCvA/profile-displayphoto-shrink_400_400/0/1691746859489?e=1715212800&v=beta&t=3J6tfRh_0nfRPWc6O18y0qE2cySGQ5cByLZ9yzljVp4" alt="linkedInProfilePic">
       </div>
       <br>
 
